@@ -179,3 +179,26 @@ lacrei/
 ```
 
 <hr style="border-top: 3px solid #bbb;">
+
+
+### Processo de trabalho
+
+- Na terça-feira de tarde iniciei decidindo fazer as funcionalidades
+- em três partes. Primeiro, setar um botão que muda as cores do site globalmente
+- na Header. 
+
+- Após decidir colocar algo que tenha a ver com a 
+- marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
+- decidi fazer um parágrafo falando da importância
+- da apreciação da arte para a saúde e em seguida
+- colocar artes feitas em CSS+HTML por pessoas
+- desenvolvedoras.
+- Acredito que isso une tudo que envolve a marca LacreiSaúde.
+- E um botão para trocar de página
+
+- E no footer decidi colocar além da logo, um botão "quero me cadastrar"
+- que abre um modal onde a pessoa usuária escolhe se é paciente ou profissional.
+
+- Tem sido um pouco confuso usar o figma porque é Muuuuita informação.
+- As vezes ela até confunde um pouco. Mas é legal ver que o design está
+- bem consistente.
