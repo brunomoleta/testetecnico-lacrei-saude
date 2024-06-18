@@ -12,28 +12,28 @@ com profissionais da saúde qualificados.
 ## Índice
 
 - [Visão geral](#visão-geral)
-    - [Requisitos pedidos](#requisitos-pedidos)
-    - [Tecnologias usadas](#tecnologias-usadas)
-        - [Principais](#principais)
-        - [Complementares](#complementares)
-    - [Funcionalidades](#funcionalidades)
-    - [Deploy](#deploy)
+  - [Requisitos pedidos](#requisitos-pedidos)
+  - [Tecnologias usadas](#tecnologias-usadas)
+    - [Principais](#principais)
+    - [Complementares](#complementares)
+  - [Funcionalidades](#funcionalidades)
+  - [Deploy](#deploy)
 - [Estrutura do projeto](#estrutura-do-projeto)
-    - [Scripts](#scripts)
-    - [Dependências](#dependências)
-    - [Dependências de desenvolvimento](#dependências-de-desenvolvimento)
-    - [Arquitetura](#arquitetura)
+  - [Scripts](#scripts)
+  - [Dependências](#dependências)
+  - [Dependências de desenvolvimento](#dependências-de-desenvolvimento)
+  - [Arquitetura](#arquitetura)
 - [Configuração e execução local](#Configuração-e-execução-local)
-    - [Instalação](#instalação)
-    - [Executar o projeto](#executar-o-projeto)
-    - [Arquitetura](#arquitetura)
+  - [Instalação](#instalação)
+  - [Executar o projeto](#executar-o-projeto)
+  - [Arquitetura](#arquitetura)
 - [Processo de trabalho](#processo-de-trabalho)
-    - [Aprendizado](#aprendizado)
-    - [O que desenvolver em seguida](#o-que-desenvolver-em-seguida)
-    - [Fontes úteis](#fontes-úteis)
+  - [Aprendizado](#aprendizado)
+  - [O que desenvolver em seguida](#o-que-desenvolver-em-seguida)
+  - [Fontes úteis](#fontes-úteis)
 - [Créditos](#crédito)
-    - [Autores](#autores)
-    - [Pessoas que nos ajudaram](#pessoas-que-nos-ajudaram)
+  - [Autores](#autores)
+  - [Pessoas que nos ajudaram](#pessoas-que-nos-ajudaram)
 
 <hr style="border-top: 3px solid #bbb;">
 <hr style="border-top: 3px solid #bbb;">
@@ -45,11 +45,11 @@ com profissionais da saúde qualificados.
 Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 
 - Desenvolver duas páginas web interativas com roteamento entre elas, incorporando os seguintes elementos:
-    - **Header e Footer**: Designs que reflitam a essência acolhedora da Lacrei Saúde.
-    - **Três Botões**: Cada um com uma funcionalidade única, adicionando interatividade ao seu site e fazendo link com
-      páginas da Lacrei Saúde.
-    - **Respeito ao Style Guide** do Figma enviado por email;
-    - **Realizar um teste** de sua escolha e demonstrar a responsividade;
+  - **Header e Footer**: Designs que reflitam a essência acolhedora da Lacrei Saúde.
+  - **Três Botões**: Cada um com uma funcionalidade única, adicionando interatividade ao seu site e fazendo link com
+    páginas da Lacrei Saúde.
+  - **Respeito ao Style Guide** do Figma enviado por email;
+  - **Realizar um teste** de sua escolha e demonstrar a responsividade;
 
 <hr style="border-top: 3px solid #bbb;">
 
@@ -74,15 +74,16 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 
 - Página Inicial
   - a pessoa usuária pode visualizar
-  ilustrações artísticas feitas somente em HTML e CSS;
+    ilustrações artísticas feitas somente em HTML e CSS;
   - Ela pode navegar de um projeto para o outro usando botões;
   - Pode colocar este projeto em visualização em tela cheia;
 - Segunda página
   - A bandeira do Orgulho pode ser personalizada de acordo com o que a pessoa
-  preferir;
+    preferir;
   - É possível personalizar a velocidade do "vento" que passa pela bandeira;
 
 ### Deploy
+
 - https://durval-music-shop.vercel.app/
 
 <hr style="border-top: 3px solid #bbb;">
@@ -104,15 +105,18 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 Execute os scripts utilizando `npm run`, `yarn` ou `pnpm`.
 
 Exemplo: `npm run dev`.
+
 <hr style="border-top: 3px solid #bbb;">
 
 ### Dependências
--  ````next````: 14.2.4,
-- ````react````: ^18,
-- ````react-dom````: ^1
-- ````styled-components````: ^6.1.11
+
+- `next`: 14.2.4,
+- `react`: ^18,
+- `react-dom`: ^1
+- `styled-components`: ^6.1.11
 
 ### Dependências de Desenvolvimento
+
 - `@testing-library/react`: ^16.0.0,
 - `@types/node`: ^20,
 - `@types/react`: ^18.3.3,
@@ -129,28 +133,30 @@ Exemplo: `npm run dev`.
 ### Configuração e execução local
 
 1. Clone o repositório:
-    ```bash
-     git clone git@github.com:brunomoleta/testetecnico-lacrei-saude.git
-    ```
+   ```bash
+    git clone git@github.com:brunomoleta/testetecnico-lacrei-saude.git
+   ```
 1. Instale as dependências:
-    ```bash
-      npm install
-      # ou
-      yarn install
-      # ou
-      pnpm install
-    ```
+
+   ```bash
+     npm install
+     # ou
+     yarn install
+     # ou
+     pnpm install
+   ```
 
 1. Execute o Projeto  
-    ```bash
+ `bash
     # development
     yarn dev
     # ou
     pnpm dev
     # ou
     npm run dev
-    ```
+    `
 <hr style="border-top: 3px solid #bbb;">
+
 ### Arquitetura
 
 ```
