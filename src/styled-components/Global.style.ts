@@ -2,7 +2,20 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-        /* Resets from Josh Cameau */
+    :root {
+        --header-background: linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%);
+        --gradient-00: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
+        --emerald-10: hsl(164deg, 48%, 91%);
+        --emerald-20: hsl(160deg, 41%, 79%);
+        --emerald-30: hsl(160deg, 41%, 65%);
+        --emerald-40: hsl(160deg, 40%, 51%);
+        --emerald-60: hsl(163deg, 99%, 27%);
+        --emerald-70: hsl(163deg, 98%, 25%);
+        --emerald-80: hsl(163deg, 100%, 23%);
+        --emerald-90: hsl(163deg, 97%, 15%);
+    }
+
+    /* Resets from Josh Cameau */
     *,
     *::before,
     *::after {
