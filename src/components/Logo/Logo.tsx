@@ -1,7 +1,9 @@
-import React from 'react';
+import Brand from "../../assets/logo.png";
+import React from "react";
+import { LogoStyle } from "@/components/Logo/Logo.style";
 
 function Logo() {
-  return <div></div>;
+  return <LogoStyle width={300} src={Brand} alt="Lacrei Saúde" />;
 }
 
 export default Logo;
