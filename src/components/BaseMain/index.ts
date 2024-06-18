@@ -1,2 +1,2 @@
-export * from './BaseMain';
-export { default } from './BaseMain';
+export * from "./BaseMain";
+export { default } from "./BaseMain";
