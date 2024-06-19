@@ -11,7 +11,7 @@ import {
 } from "@/components/ArtGrid/ArtGrid.style";
 import { illustrations } from "@/utils/ArtList";
 import Hero from "@/components/Hero";
-import {art} from "@/types/types";
+import { art } from "@/types/types";
 
 function ArtGrid() {
   const settings = {
@@ -29,7 +29,7 @@ function ArtGrid() {
     <Container>
       <ArtContainer {...settings}>
         <Hero />
-        {illustrations.map((art:art, index) => (
+        {illustrations.map((art: art, index) => (
           <div key={index}>
             {art.objeto}
             <Info>
