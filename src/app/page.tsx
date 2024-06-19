@@ -1,12 +1,11 @@
 import ArtGrid from "@/components/ArtGrid";
-import Hero from "@/components/Hero";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Hero />
       <ArtGrid />
-      <button>Ir para próxima página</button>
+      <Link href={"/pride"}>Ir para próxima página</Link>
     </>
   );
 }
