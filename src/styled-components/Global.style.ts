@@ -13,6 +13,9 @@ const GlobalStyles = createGlobalStyle`
         --emerald-70: hsl(163deg, 98%, 25%);
         --emerald-80: hsl(163deg, 100%, 23%);
         --emerald-90: hsl(163deg, 97%, 15%);
+        
+        --max-inline-size:55ch;
+        --art-height: 750px;
     }
 
     /* Resets from Josh Cameau */
@@ -37,6 +40,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         height: 100%;
         font-family: 'Nunito Variable', sans-serif;
+        
     }
 
     ol {
