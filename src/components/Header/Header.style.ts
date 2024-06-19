@@ -6,8 +6,8 @@ export const HeaderWrapper = styled.div`
   grid-template-columns: auto 1fr;
   justify-items: end;
   align-items: center;
-  padding-block-start: 32px;
+  padding-block: 32px;
   max-width: 1440px;
   margin: auto;
-  padding-inline:;
+  padding-inline: clamp(16px, 4svw, 40px);
 `;

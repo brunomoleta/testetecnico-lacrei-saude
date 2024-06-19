@@ -5,7 +5,7 @@ import { HeaderWrapper } from "@/components/Header/Header.style";
 
 function Header({ children }: ChildrenProps) {
   return (
-    <header>
+    <header style={{ backgroundColor: "var(--color-background)" }}>
       <HeaderWrapper>
         <Logo />
         {children}
