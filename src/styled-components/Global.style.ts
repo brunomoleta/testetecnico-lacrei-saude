@@ -3,8 +3,16 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     :root {
-        --header-background: linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%);
+        --grey-90:hsl(0deg, 0%, 10%);
+        --grey-80:hsl(0deg, 0%, 18%);
+        --grey-10:hsl(0deg, 0%, 95%);
+        
+        --night: hsl(211deg, 55%, 55%);
+        --day: hsl(16deg, 68%, 85%);
+        
+        --header-background: linear-gradient(rgb(245, 255, 251) 00.04%, rgb(245, 255, 251) 100%);
         --gradient-00: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
+        --emerald-5: hsl(164deg, 48%, 97%);
         --emerald-10: hsl(164deg, 48%, 91%);
         --emerald-20: hsl(160deg, 41%, 79%);
         --emerald-30: hsl(160deg, 41%, 65%);
@@ -13,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
         --emerald-70: hsl(163deg, 98%, 25%);
         --emerald-80: hsl(163deg, 100%, 23%);
         --emerald-90: hsl(163deg, 97%, 15%);
+        --emerald-100: hsl(163deg, 97%, 5%);
         
         --max-inline-size:55ch;
         --art-height: 750px;
@@ -40,6 +49,8 @@ const GlobalStyles = createGlobalStyle`
     body {
         height: 100%;
         font-family: 'Nunito Variable', sans-serif;
+        background-color: var(--color-background);
+        color: var(--color-text);
         
     }
 
