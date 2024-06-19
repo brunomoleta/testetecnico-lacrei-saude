@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
 import React from "react";
 
 import Balancer from "react-wrap-balancer";
 import Link from "next/link";
-import { Wrapper } from "@/components/Hero/Hero.style";
-import {VisuallyHidden} from "@radix-ui/react-visually-hidden";
+import { Author, Wrapper } from "@/components/Hero/Hero.style";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 function Hero() {
   return (
     <Wrapper>
       <VisuallyHidden>
-        <h1>Teste técnico da Lacrei Saúde
-        produzido por Bruno Moleta Santos</h1>
+        <h1>Teste técnico da Lacrei Saúde produzido por Bruno Moleta Santos</h1>
       </VisuallyHidden>
       <p>
         <Balancer>
@@ -24,9 +23,9 @@ function Hero() {
       <p>
         <Balancer>
           Uma delas é a{" "}
-          <Link href="https://css-art.com/@fossheim">Sarah Fossheim</Link>
-          (elu/delu). Estas são as minhas preferidas delu, tomara que tu goste
-          também :)
+          <Author href="https://css-art.com/@fossheim">Sarah Fossheim</Author>
+          (elu/delu). Os desenhos aqui expostos são meus preferidos delu, tomara
+          que tu goste também :)
         </Balancer>
       </p>
       <p>Arraste para os lados para ver as obras :)</p>
@@ -36,7 +35,7 @@ function Hero() {
           Caso você já tenha visto as artes, sugiro que você vá pra página
           seguinte que também está bem legal ;)
         </p>
-        <button>Vamos lá</button>
+        <Link href={"/pride"}>Vamos lá</Link>
       </div>
     </Wrapper>
   );
