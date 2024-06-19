@@ -1,2 +1,2 @@
-export * from './ArtGrid';
-export { default } from './ArtGrid';
+export * from "./ArtGrid";
+export { default } from "./ArtGrid";
