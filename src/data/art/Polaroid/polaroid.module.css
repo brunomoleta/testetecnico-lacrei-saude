@@ -52,7 +52,7 @@
     top left,
     bottom left,
     bottom left;
-  box-shadow: -1px 3px 2px 0  rgba(249, 247, 248, 0.65) inset;
+  box-shadow: -1px 3px 2px 0 rgba(249, 247, 248, 0.65) inset;
 }
 
 .camera .bottom .printer {
@@ -454,7 +454,7 @@
     bottom -8px left -3px,
     center;
   box-shadow:
-    0  0  1px 0  #010000 inset,
+    0 0 1px 0 #010000 inset,
     0 0 1px 1px #393836 inset,
     0 0 2px 2px #010000 inset,
     0 0 2px 4px #393836 inset,
@@ -473,8 +473,8 @@
   border-radius: 10px;
   box-shadow:
     0.5px 2px 2px 0 #5e5b56,
-    0  1px 3px 0  #cac4c5,
-    -4px 0  5px 0  rgba(9, 7, 5, 0.75),
+    0 1px 3px 0 #cac4c5,
+    -4px 0 5px 0 rgba(9, 7, 5, 0.75),
     1px 1px 1px 1px #f1ecf0 inset,
     1.5px 1.5px 1px 1px #d1d0ce inset;
   border: 0.5px solid rgba(9, 7, 5, 0.75);
@@ -489,7 +489,7 @@
   top: 35px;
   background-image: radial-gradient(#e8e4e5, #dedad9);
   box-shadow:
-    0  0.5px 1px 0.5px #605c5b,
+    0 0.5px 1px 0.5px #605c5b,
     1px 1px 1px #fffbfc inset;
 }
 
@@ -516,7 +516,7 @@
     center;
   background-repeat: no-repeat;
   box-shadow:
-    0  0.5px 1px 0.75px #fffbfc,
+    0 0.5px 1px 0.75px #fffbfc,
     0 -1px 1px #635f5e;
 }
 
@@ -536,8 +536,8 @@
     #383637
   );
   box-shadow:
-    0  0.5px 1px 0.75px #c6c1c0,
-    0  -0.5px 0.5px 0.25px #1a1819,
+    0 0.5px 1px 0.75px #c6c1c0,
+    0 -0.5px 0.5px 0.25px #1a1819,
     -5px -8px 8px 1px rgba(86, 82, 82, 0.4);
 }
 
@@ -567,6 +567,6 @@
   background-image: radial-gradient(#fbc00a, #ffdb09);
   box-shadow:
     0.5px 1px 0.75px 0.25px #ffed71 inset,
-    0  -0.5px 0.5px 0.5px #e6a11f inset,
+    0 -0.5px 0.5px 0.5px #e6a11f inset,
     -1px 0.5px 4px 1px #964900;
 }

@@ -4,9 +4,10 @@ import Logo from "@/components/Logo";
 import { HeaderWrapper } from "@/components/Header/Header.style";
 
 function Header({ children }: ChildrenProps) {
+  const id = React.useId();
   return (
     <header style={{ backgroundColor: "var(--color-background)" }}>
-      <HeaderWrapper>
+      <HeaderWrapper id={`${id}-header`}>
         <Logo />
         {children}
       </HeaderWrapper>

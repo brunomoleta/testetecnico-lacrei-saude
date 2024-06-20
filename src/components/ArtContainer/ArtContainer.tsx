@@ -11,8 +11,9 @@ import { illustrations } from "@/utils/ArtList";
 import { Container } from "@/components/ArtContainer/ArtContainer.style";
 
 function ArtContainer() {
+  const id = React.useId();
   return illustrations.map((art: art, index: number) => (
-    <Container key={index}>
+    <Container id={`${id}-${art.nome}`} key={index}>
       {art.objeto}
       <Info>
         <TextWrap>

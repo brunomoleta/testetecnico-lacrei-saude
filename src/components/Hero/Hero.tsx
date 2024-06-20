@@ -9,9 +9,10 @@ import { NextPageDesktop } from "@/components/ArtWrapperDefault/Default.style";
 import { Info } from "@/components/ArtGrid/ArtGrid.style";
 
 function Hero() {
+  const id = React.useId();
   return (
     <>
-      <Wrapper>
+      <Wrapper id={`${id}-hero}`}>
         <VisuallyHidden>
           <h1>
             Teste técnico da Lacrei Saúde produzido por Bruno Moleta Santos

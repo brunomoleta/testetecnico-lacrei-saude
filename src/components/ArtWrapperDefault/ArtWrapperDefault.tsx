@@ -7,11 +7,14 @@ import {
 } from "@/components/ArtWrapperDefault/Default.style";
 
 function ArtWrapperDefault() {
+  const id = React.useId();
   return (
     <Wrapper>
       <Hero />
       <ArtContainer />
-      <NextPageMobile href="/pride">Ir para próxima página</NextPageMobile>
+      <NextPageMobile id={`${id}-nextpage`} href="/pride">
+        Ir para próxima página
+      </NextPageMobile>
     </Wrapper>
   );
 }

@@ -13,7 +13,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 function ArtModal({ art }: { art: art }) {
   const { nome, subtitulo, objeto } = art;
-
+  const id = React.useId();
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
@@ -21,16 +21,14 @@ function ArtModal({ art }: { art: art }) {
       </Dialog.Trigger>
       <Dialog.Portal>
         <DOverlay />
-        <DContent className="DialogContent">
+        <DContent>
           <VisuallyHidden>
-            <Dialog.Title className="DialogTitle">{nome}</Dialog.Title>
-            <Dialog.Description className="DialogDescription">
-              {subtitulo}
-            </Dialog.Description>
+            <Dialog.Title>{nome}</Dialog.Title>
+            <Dialog.Description>{subtitulo}</Dialog.Description>
           </VisuallyHidden>
           {objeto}
           <DClose asChild>
-            <button aria-label="Close">
+            <button id={`${id}-closemodal`} aria-label="Close">
               <Cross2Icon color={"var(--color-link)"} width={25} height={25} />
             </button>
           </DClose>

@@ -13,6 +13,7 @@ import {
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 function DarkLightMode({ initialTheme }: Theme) {
+  const id = React.useId();
   const [theme, setTheme] = React.useState(initialTheme);
 
   function handleClick(isLight: boolean) {
@@ -31,13 +32,19 @@ function DarkLightMode({ initialTheme }: Theme) {
   }
 
   return (
-    <Wrapper>
+    <Wrapper id={`${id}-darkLight-mode-wrapper`}>
       <span>Modo de visualização:</span>
       <Buttons>
-        <Day disabled={theme === "light"} onClick={() => handleClick(true)}>
+        <Day
+          id={`${id}-switch-color-theme-light`}
+          onClick={() => handleClick(true)}
+        >
           Dia <SunIcon />
         </Day>
-        <Night disabled={theme === "dark"} onClick={() => handleClick(false)}>
+        <Night
+          id={`${id}-switch-color-theme-dark`}
+          onClick={() => handleClick(false)}
+        >
           Noite <MoonIcon />
         </Night>
       </Buttons>

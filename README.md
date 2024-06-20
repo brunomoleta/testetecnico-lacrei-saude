@@ -225,3 +225,9 @@ Infelizmente como as ilustrações em CSS são feitas em px pela Sarah
 acabei não fazendo Mobile first, mas é algo que realizei com frequência em outros projetos [portfólio](https://www.brunomoleta.com.br/).
 
 Amanhã quero ajeitar os estilos de fonte, fazer testes unitários e responsividade mobile :D.
+
+- Quinta-feira
+
+Após ajeitar bem a página inicial com responsividade. Fui fazer os testes unitários.
+Já os fiz, mas não em Next.js, apenas em React puro. Tive bastante dificuldade
+com erros de configuração como a questão do @ (alias).
