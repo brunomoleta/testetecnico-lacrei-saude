@@ -4,7 +4,7 @@
 
 ## Descrição
 
-Este é o teste técnico para voluntariado na plataforma Lacrei Saúde que conecta pessoas LGBTQIAPN+
+Este é o teste técnico para voluntariado na Lacrei Saúde, a aplicação que conecta pessoas LGBTQIAPN+
 com profissionais da saúde qualificados.
 
 <hr style="border-top: 3px solid #bbb;">
@@ -17,6 +17,7 @@ com profissionais da saúde qualificados.
     - [Principais](#principais)
     - [Complementares](#complementares)
   - [Funcionalidades](#funcionalidades)
+  - [Telas](#telas)
   - [Deploy](#deploy)
 - [Estrutura do projeto](#estrutura-do-projeto)
   - [Scripts](#scripts)
@@ -31,9 +32,9 @@ com profissionais da saúde qualificados.
   - [Aprendizado](#aprendizado)
   - [O que desenvolver em seguida](#o-que-desenvolver-em-seguida)
   - [Fontes úteis](#fontes-úteis)
-- [Créditos](#crédito)
-  - [Autores](#autores)
-  - [Pessoas que nos ajudaram](#pessoas-que-nos-ajudaram)
+- [Considerações Finais](#considerações-finais)
+  - [Créditos](#autores)
+  - [Agradecimentos](#agradecimentos)
 
 <hr style="border-top: 3px solid #bbb;">
 <hr style="border-top: 3px solid #bbb;">
@@ -82,6 +83,11 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
     preferir;
   - É possível personalizar a velocidade do "vento" que passa pela bandeira;
 
+### Telas 
+
+![Imagem da Página inicial](/public/MultiDeviceafphoto.jpg)
+![Imagem da segunda página](/public/MultiDeviceafphoto-2.jpg)
+
 ### Deploy
 
 - https://durval-music-shop.vercel.app/
@@ -96,9 +102,6 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 - `dev`: Inicia o ambiente de desenvolvimento.
 - `build`: Usado para construir o aplicativo para produção.
 - `format`: Formata o projeto inteiro usando Prettier.
-- `test:unit`: Realiza os testes unitários na aplicação.
-- `test:cy-d`: Realiza testes de interface no terminal.
-- `test:cy-open`: Abre o Cypress e é possível ver o teste sendo realizado automaticamente.
 - `lint`: Executa o ESLint para linting e correção automática.
 - `preview`: Usado para pré-visualizar o aplicativo construído usando o Vite.
 
@@ -114,6 +117,15 @@ Exemplo: `npm run dev`.
 - `react`: ^18,
 - `react-dom`: ^1
 - `styled-components`: ^6.1.11
+- `@fontsource-variable/nunito`: ^5.0.19,
+- `@radix-ui/react-dialog`: ^1.1.0,
+- `@radix-ui/react-icons`: ^1.3.0,
+- `@radix-ui/react-visually-hidden`: ^1.0.3,
+- `cookies-next`: ^4.2.1,
+- `lodash.range`: ^3.2.0,
+- `react-slick`: ^0.30.2,
+- `react-wrap-balancer`: ^1.1.1,
+- `slick-carousel`: ^1.8.1,
 
 ### Dependências de Desenvolvimento
 
@@ -146,7 +158,8 @@ Exemplo: `npm run dev`.
      pnpm install
    ```
 
-1. Execute o Projeto  
+1. Execute o Projeto
+
  `bash
     # development
     yarn dev
@@ -167,40 +180,39 @@ lacrei/
 ├── public/               Recursos públicos acessíveis diretamente.
 │
 ├── src/                    Código-fonte da aplicação.
+│   ├── app/                App do Next onde ocorre o coração do projeto, roteador etc
 │   ├── assets/             Recursos estáticos como imagens, icones, etc.
 │   ├── components/         Componentes reutilizáveis.
-│   ├── hooks/              Hooks reutilizáveis.
-│   ├── providers/          Componentes de gerenciamento de estado global.
-│   ├── schemas/            Contexto de validação de dados.
-│   ├── services/           Funções que auxiliam as funções principais.
+│   ├── data/               Código trazido pronto de fora do projeto.
+│   ├── providers/          Componente que configura o Styled-components
 │   ├── styled-components/  Estilos globais da aplicação.
-│   └── tests/              Testes
 │   └── types/              Tipagem dos components, funções e providers.
+│   ├── utils/              Funções que auxiliam o lógica principal.
 ```
 
 <hr style="border-top: 3px solid #bbb;">
 
-### Processo de trabalho
+## Processo de trabalho
 
 #### Terça-feira
 
-Iniciei decidindo fazer as funcionalidades
-em três partes. Primeiro, setar um botão que muda as cores do site globalmente
+- Iniciei decidindo fazer as funcionalidades
+em três partes. 
+- Primeiro, setar um botão que muda as cores do site globalmente
 na Header.
 
 - Após decidir colocar algo que tenha a ver com a
-- marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
-- decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
+ marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
+ decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
   em CSS e HTML. Acredito que isso tem muito a ver com tecnologia e de dar luz a pessoas desconhecidas.
--
-- E um botão para trocar de página
-
-- E no footer decidi colocar além da logo, um botão "quero me cadastrar"
-- que abre um modal onde a pessoa usuária escolhe se é paciente ou profissional.
+- E um botão para trocar de página indo para uma funcionalidade que troca 
+a bandeira do Orgulho entre quatro opções. A bandeira em si foi trazida pronta
+do site do Josh Comeau. Meu trabalho foi trocar ela com um estado a partir do click nela mesma.
+- E no footer decidi colocar além da logo, um link que leva ao "quem somos" do site oficial.
 
 - Tem sido um pouco confuso usar o figma porque é Muuuuita informação.
-- As vezes ela até confunde um pouco. Mas é legal ver que o design está
-- bem consistente.
+O arquivo confunde um pouco. Mas é legal ver que o design da Lacrei
+está bem consistente.
 
 #### Quarta-feira
 
@@ -213,6 +225,8 @@ pra componentes React.
 
 Fiquei na dúvida como seria a visualização. Então após alguns testes
 decidi colocar em um carrossel usando uma API chamada `react-slick`.
+Isso no Desktop. Pro Mobile este carrossel foi ocultado e criado uma 
+rolagem vertical convencional.
 
 Além disso, fiz o modo noturno com botões `dia` e `noite`.
 Usei a maneira de fazer do [Josh Comeau](https://www.joshwcomeau.com/), um dev. muito bom
@@ -223,11 +237,42 @@ feita direto em código que o Josh mesmo explica [aqui](https://www.joshwcomeau.
 
 Infelizmente como as ilustrações em CSS são feitas em px pela Sarah
 acabei não fazendo Mobile first, mas é algo que realizei com frequência em outros projetos [portfólio](https://www.brunomoleta.com.br/).
+Mas está adaptado pára Mobile também.
 
 Amanhã quero ajeitar os estilos de fonte, fazer testes unitários e responsividade mobile :D.
 
-- Quinta-feira
+#### Quinta-feira
 
 Após ajeitar bem a página inicial com responsividade. Fui fazer os testes unitários.
 Já os fiz, mas não em Next.js, apenas em React puro. Tive bastante dificuldade
-com erros de configuração como a questão do @ (alias).
+com erros de configuração como a questão do @ (alias). Por isso preferi fazer
+um teste ponta a ponta com Cypres em outro repositório e direto na aplicação em produção.
+
+### Aprendizado
+
+### O que desenvolver em seguida
+
+O ideal seriam as transições de página, estado dos elementos em hover, active,
+focus estarem mais bem apresentados. Usar Framer Motion para a renderização inicial
+dos elementos também é uma boa.
+
+### Fontes úteis
+
+Blog do Josh Comeau é bom demais. Ele é engraçado e 
+tem muita muita coisa gratuita pra aprender relacionada 
+a front end.
+
+<hr style="border-top: 3px solid #bbb;">  
+
+## Considerações finais
+
+### Créditos
+
+- Josh Comeau e Sarah Fossheim que foram minhas inspirações
+ao fazer este projeto.
+
+### Agradecimentos
+
+- Agradeço a Lacrei Saúde pela oportunidade de ler atentamente
+a Marsha Design System e reitero meu interesse em fazer parte através 
+do voluntariado. Tanto pela causa quanto pelo "pôr a mão na massa" :D.
