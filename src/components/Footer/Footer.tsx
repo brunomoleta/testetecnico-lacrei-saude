@@ -1,10 +1,16 @@
 import React from "react";
-import Join from "@/components/Join";
+import Logo from "@/components/Logo";
+import { Container, LacreiLink } from "@/components/Footer/Footer.style";
 
 function Footer() {
   return (
     <footer>
-      <Join />
+      <Container>
+        <Logo />
+        <LacreiLink href="https://lacreisaude.com.br/quem-somos/">
+          Quem somos
+        </LacreiLink>
+      </Container>
     </footer>
   );
 }
