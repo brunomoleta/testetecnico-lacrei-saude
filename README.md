@@ -183,15 +183,16 @@ lacrei/
 ### Processo de trabalho
 
 #### Terça-feira
-  Iniciei decidindo fazer as funcionalidades
+
+Iniciei decidindo fazer as funcionalidades
 em três partes. Primeiro, setar um botão que muda as cores do site globalmente
 na Header.
 
 - Após decidir colocar algo que tenha a ver com a
 - marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
 - decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
-em CSS e HTML. Acredito que isso tem muito a ver com tecnologia e de dar luz a pessoas desconhecidas.
-- 
+  em CSS e HTML. Acredito que isso tem muito a ver com tecnologia e de dar luz a pessoas desconhecidas.
+-
 - E um botão para trocar de página
 
 - E no footer decidi colocar além da logo, um botão "quero me cadastrar"
@@ -214,13 +215,13 @@ Fiquei na dúvida como seria a visualização. Então após alguns testes
 decidi colocar em um carrossel usando uma API chamada `react-slick`.
 
 Além disso, fiz o modo noturno com botões `dia` e `noite`.
-Usei a maneira de fazer do [Josh Comeau](https://www.joshwcomeau.com/), um dev. muito bom 
+Usei a maneira de fazer do [Josh Comeau](https://www.joshwcomeau.com/), um dev. muito bom
 que tem um blog ótimo.
 
 Já defini o que colocar na segunda página, que é uma arte da bandeira do orgulho LGBTQIAPN+
 feita direto em código que o Josh mesmo explica [aqui](https://www.joshwcomeau.com/animation/pride-flags/).
 
-Infelizmente como as ilustrações em CSS são feitas em px pela Sarah 
+Infelizmente como as ilustrações em CSS são feitas em px pela Sarah
 acabei não fazendo Mobile first, mas é algo que realizei com frequência em outros projetos [portfólio](https://www.brunomoleta.com.br/).
 
 Amanhã quero ajeitar os estilos de fonte, fazer testes unitários e responsividade mobile :D.
