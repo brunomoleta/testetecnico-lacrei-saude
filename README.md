@@ -62,7 +62,6 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 - Styled-components
 - Typescript
 
-
 <hr style="border-top: 3px solid #bbb;">
 
 ### Funcionalidades
@@ -79,7 +78,7 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 
 <hr style="border-top: 3px solid #bbb;">
 
-### Telas 
+### Telas
 
 ![Imagem da Página inicial](/public/MultiDeviceafphoto.jpg)
 ![Imagem da segunda página](/public/MultiDeviceafphoto-2.jpg)
@@ -157,7 +156,7 @@ Exemplo: `npm run dev`.
 
 1. Execute o Projeto
 
- `bash
+`bash
     # development
     yarn dev
     # ou
@@ -165,6 +164,7 @@ Exemplo: `npm run dev`.
     # ou
     npm run dev
     `
+
 <hr style="border-top: 3px solid #bbb;">
 
 ### Arquitetura
@@ -194,22 +194,22 @@ lacrei/
 #### Terça-feira
 
 - Iniciei decidindo fazer as funcionalidades
-em três partes. 
+  em três partes.
 - Primeiro, setar um botão que muda as cores do site globalmente
-na Header.
+  na Header.
 
 - Após decidir colocar algo que tenha a ver com a
- marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
- decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
+  marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
+  decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
   em CSS e HTML. Acredito que isso tem muito a ver com tecnologia e de dar luz a pessoas desconhecidas.
-- E um botão para trocar de página indo para uma funcionalidade que troca 
-a bandeira do Orgulho entre quatro opções. A bandeira em si foi trazida pronta
-do site do Josh Comeau. Meu trabalho foi trocar ela com um estado a partir do click nela mesma.
+- E um botão para trocar de página indo para uma funcionalidade que troca
+  a bandeira do Orgulho entre quatro opções. A bandeira em si foi trazida pronta
+  do site do Josh Comeau. Meu trabalho foi trocar ela com um estado a partir do click nela mesma.
 - E no footer decidi colocar além da logo, um link que leva ao "quem somos" do site oficial.
 
 - Tem sido um pouco confuso usar o figma porque é Muuuuita informação.
-O arquivo confunde um pouco. Mas é legal ver que o design da Lacrei
-está bem consistente.
+  O arquivo confunde um pouco. Mas é legal ver que o design da Lacrei
+  está bem consistente.
 
 #### Quarta-feira
 
@@ -222,7 +222,7 @@ pra componentes React.
 
 Fiquei na dúvida como seria a visualização. Então após alguns testes
 decidi colocar em um carrossel usando uma API chamada `react-slick`.
-Isso no Desktop. Pro Mobile este carrossel foi ocultado e criado uma 
+Isso no Desktop. Pro Mobile este carrossel foi ocultado e criado uma
 rolagem vertical convencional.
 
 Além disso, fiz o modo noturno com botões `dia` e `noite`.
@@ -255,21 +255,21 @@ dos elementos também é uma boa.
 
 ### Fontes úteis
 
-Blog do Josh Comeau é bom demais. Ele é engraçado e 
-tem muita muita coisa gratuita pra aprender relacionada 
+Blog do Josh Comeau é bom demais. Ele é engraçado e
+tem muita muita coisa gratuita pra aprender relacionada
 a front end.
 
-<hr style="border-top: 3px solid #bbb;">  
+<hr style="border-top: 3px solid #bbb;">
 
 ## Considerações finais
 
 ### Créditos
 
 - Josh Comeau e Sarah Fossheim que foram minhas inspirações
-ao fazer este projeto.
+  ao fazer este projeto.
 
 ### Agradecimentos
 
 - Agradeço a Lacrei Saúde pela oportunidade de ler atentamente
-a Marsha Design System e reitero meu interesse em fazer parte através 
-do voluntariado. Tanto pela causa quanto pelo "pôr a mão na massa" :D.
+  a Marsha Design System e reitero meu interesse em fazer parte através
+  do voluntariado. Tanto pela causa quanto pelo "pôr a mão na massa" :D.

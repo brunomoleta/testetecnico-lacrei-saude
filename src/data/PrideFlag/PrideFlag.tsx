@@ -3,6 +3,7 @@ import range from "lodash.range";
 
 import styles from "./PrideFlag.module.css";
 import { COLORS } from "./constants";
+import { PrideFlagProps } from "@/types/types";
 
 function PrideFlag({
   variant = "rainbow",
@@ -10,7 +11,7 @@ function PrideFlag({
   numOfColumns = 10,
   staggeredDelay = 100,
   billow = 2,
-}) {
+}: PrideFlagProps) {
   const colors = COLORS[variant];
 
   const friendlyWidth = Math.round(width / numOfColumns) * numOfColumns;
