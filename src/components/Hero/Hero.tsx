@@ -7,6 +7,7 @@ import { Author, Instruction, Wrapper } from "@/components/Hero/Hero.style";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { NextPageDesktop } from "@/components/ArtWrapperDefault/Default.style";
 import { Info } from "@/components/ArtGrid/ArtGrid.style";
+import {ArrowRightIcon} from "@radix-ui/react-icons";
 
 function Hero() {
   const id = React.useId();
@@ -37,7 +38,7 @@ function Hero() {
       </Wrapper>
       <Info style={{ paddingInlineEnd: "24px", paddingBlockStart: "10px" }}>
         <div />
-        <NextPageDesktop href="/pride">Ir para página seguinte</NextPageDesktop>
+        <NextPageDesktop href="/pride">Ir para página seguinte <ArrowRightIcon/></NextPageDesktop>
       </Info>
     </>
   );
