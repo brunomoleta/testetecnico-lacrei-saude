@@ -3,13 +3,19 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     :root {
-        --grey-90:hsl(0deg, 0%, 10%);
-        --grey-80:hsl(0deg, 0%, 18%);
-        --grey-10:hsl(0deg, 0%, 95%);
-        
-        --night: hsl(211deg, 55%, 55%);
+        --grey-90: hsl(0deg, 0%, 10%);
+
+        --grey-80: hsl(0deg, 0%, 18%);
+        --grey-70: hsl(0deg, 0%, 32%);
+        --grey-60: hsl(0deg, 0%, 40%);
+
+        --grey-30: hsl(0deg, 0%, 80%);
+        --grey-20: hsl(0deg, 0%, 88%);
+        --grey-10: hsl(0deg, 0%, 95%);
+
+        --night: hsl(211deg, 55%, 25%);
         --day: hsl(16deg, 68%, 85%);
-        
+
         --header-background: linear-gradient(rgb(245, 255, 251) 00.04%, rgb(245, 255, 251) 100%);
         --gradient-00: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
         --emerald-5: hsl(164deg, 48%, 97%);
@@ -22,9 +28,13 @@ const GlobalStyles = createGlobalStyle`
         --emerald-80: hsl(163deg, 100%, 23%);
         --emerald-90: hsl(163deg, 97%, 15%);
         --emerald-100: hsl(163deg, 97%, 5%);
-        
-        --max-inline-size:55ch;
+
+        --max-inline-size: 55ch;
         --art-height: 750px;
+        
+        --container-max-width:1440px;
+        
+        --clamp: clamp(16px, 4svw, 40px);
     }
 
     /* Resets from Josh Cameau */
@@ -105,7 +115,7 @@ const GlobalStyles = createGlobalStyle`
         overflow-wrap: break-word;
         font-weight: inherit;
         font-size: inherit;
-        line-height: inherit;
+        line-height: 150%;
     }
 
     /*
