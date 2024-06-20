@@ -10,7 +10,7 @@ import { DARK_COLORS, LIGHT_COLORS } from "@/styled-components/colors.style";
 import DarkLightMode from "@/components/DarkLightMode";
 
 export const metadata: Metadata = {
-  title: "Lacrei Saúde",
+  title: "Início | Lacrei Saúde",
   description: "Teste técnico de Bruno",
 };
 

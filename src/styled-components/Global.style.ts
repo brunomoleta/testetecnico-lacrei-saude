@@ -61,7 +61,6 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Nunito Variable', sans-serif;
         background-color: var(--color-background);
         color: var(--color-text);
-        
     }
 
     ol {
@@ -187,7 +186,7 @@ const GlobalStyles = createGlobalStyle`
         max-inline-size: var(--max-inline-size);
 
         &::selection {
-            background: var(--emerald-20);
+            background: var(--color-selection);
         }
     }
 
@@ -244,22 +243,26 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a, button {
-        border: 3px solid var(--color-background);
-        outline: 2px solid transparent;
-        @media (prefers-reduced-motion: no-preference) {
-            transition: border-color 500ms ease-out;
-        }
     }
 
     a {
         padding: 8px;
     }
 
-    a:focus, button:focus, a:hover, button:hover {
+    a:focus, button:focus{
+        border: 3px solid var(--emerald-40);
+        outline: 2px solid var(--emerald-20);
+        @media (prefers-reduced-motion: no-preference) {
+            transition: border-color 500ms ease-out;
+        }
+    } 
+    
+    a:hover, button:hover {
         transition: border-color 200ms ease-in;
-        //border: 3px solid var(--teal-primary);
+        border: 3px solid var(--color-link);
         outline: 2px solid transparent;
     }
+    
 
     p {
         overflow-wrap: break-word;

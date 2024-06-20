@@ -10,10 +10,10 @@ export const Wrapper = styled.div`
 `;
 
 export const NextPageBtn = styled(Link)`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px 0;
 
   background-color: var(--emerald-60);
@@ -28,7 +28,6 @@ export const NextPageBtn = styled(Link)`
 
   border-radius: 8px;
   transition: background-color 450ms ease-out;
-  
 
   &:hover {
     color: 2px solid var(--color-link);

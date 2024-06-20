@@ -71,31 +71,30 @@ export const Ampliar = styled.button`
   }
 `;
 export const SwitchPage = styled(Link)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    
-    max-width: 500px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 
-        box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px 0;
+  max-width: 500px;
+  text-align: center;
 
-        color: var(--color-link);
-        border: 2px solid var(--color-link);
-        font-weight: 600;
-        letter-spacing: 0.02rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px 0;
 
-        height: fit-content;
+  color: var(--color-link);
+  border: 2px solid var(--color-link);
+  font-weight: 600;
+  letter-spacing: 0.02rem;
 
-        padding: 8px 24px;
+  height: fit-content;
 
-        border-radius: 8px;
-        transition: background-color 450ms ease-out;
+  padding: 8px 24px;
 
-        &:hover {
-            background-color: var(--emerald-10);
-            transition: background-color 250ms ease-in;
-        }
-    
+  border-radius: 8px;
+  transition: background-color 450ms ease-out;
+
+  &:hover {
+    background-color: var(--emerald-10);
+    transition: background-color 250ms ease-in;
+  }
 `;
