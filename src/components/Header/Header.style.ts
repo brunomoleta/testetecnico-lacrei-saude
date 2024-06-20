@@ -2,12 +2,21 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-items: end;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: 0.875rem;
+
   padding-block: 32px;
-  max-width: 1440px;
+  max-width: var(--container-max-width);
   margin: auto;
-  padding-inline: clamp(16px, 4svw, 40px);
+  padding-inline: var(--clamp);
+
+  @media (min-width: 40rem) {
+    font-size: unset;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: end;
+    align-items: center;
+  }
 `;
