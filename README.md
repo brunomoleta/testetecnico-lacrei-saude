@@ -15,7 +15,6 @@ com profissionais da saúde qualificados.
   - [Requisitos pedidos](#requisitos-pedidos)
   - [Tecnologias usadas](#tecnologias-usadas)
     - [Principais](#principais)
-    - [Complementares](#complementares)
   - [Funcionalidades](#funcionalidades)
   - [Telas](#telas)
   - [Deploy](#deploy)
@@ -63,11 +62,6 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 - Styled-components
 - Typescript
 
-#### Complementares
-
-- Framer motion
-- Vitest
-- React Testing Library
 
 <hr style="border-top: 3px solid #bbb;">
 
