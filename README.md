@@ -240,10 +240,16 @@ Amanhã quero ajeitar os estilos de fonte, fazer testes unitários e responsivid
 
 #### Quinta-feira
 
-Após ajeitar bem a página inicial com responsividade. Fui fazer os testes unitários.
-Já os fiz, mas não em Next.js, apenas em React puro. Tive bastante dificuldade
-com erros de configuração como a questão do @ (alias). Por isso preferi fazer
-um teste ponta a ponta com Cypres em outro repositório e direto na aplicação em produção.
+Tive bastante dificuldade
+com erros de configuração como a questão do @ (alias).
+Por isso infelizmente não realizei testes.
+Já os fiz, mas não em Next.js, apenas em React puro.
+Por isso esta parte infelizmente não entreguei.
+Em especial pois tive dificuldades com a tipagem do componente
+da Bandeira do Orgulho, o que levou mais tempo
+do que eu esperava para resolver.
+Mas deu boa.
+Ademais, tive sucesso em ajeitar bem as páginas com responsividade.
 
 ### Aprendizado
 
