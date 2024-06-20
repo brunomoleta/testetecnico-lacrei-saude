@@ -9,6 +9,7 @@
   display: grid;
   place-content: center;
   justify-items: center;
+  border-radius: 2px;
 }
 
 .camera {

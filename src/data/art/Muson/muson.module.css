@@ -15,6 +15,8 @@
   background-image: linear-gradient(45deg, #cfd6f0, #f0f2fe);
   height: calc(var(--height) + 140px);
   width: calc(var(--width) + 4rem);
+
+  border-radius: 2px;
 }
 
 .muson {
@@ -839,6 +841,7 @@
 .ranges li {
   height: 1.5ex;
   margin-bottom: 6px;
+  color: black;
 }
 
 .left .ranges {
@@ -850,6 +853,7 @@
 }
 .type > li {
   height: 2ex;
+  color: black;
 }
 
 .left .ranges li:last-child {

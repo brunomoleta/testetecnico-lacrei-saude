@@ -5,8 +5,11 @@
   background-image: radial-gradient(#66bcc8, transparent);
   padding-block: 1px 1px;
   padding-inline: 160px;
+
   width: fit-content;
   height: var(--art-height);
+
+  border-radius: 2px;
 }
 
 .sardina {
