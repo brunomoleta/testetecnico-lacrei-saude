@@ -77,16 +77,19 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
     preferir;
   - É possível personalizar a velocidade do "vento" que passa pela bandeira;
 
+<hr style="border-top: 3px solid #bbb;">
+
 ### Telas 
 
 ![Imagem da Página inicial](/public/MultiDeviceafphoto.jpg)
 ![Imagem da segunda página](/public/MultiDeviceafphoto-2.jpg)
 
+<hr style="border-top: 3px solid #bbb;">
+
 ### Deploy
 
-- https://durval-music-shop.vercel.app/
+- https://testetecnico-lacrei-saude.vercel.app/
 
-<hr style="border-top: 3px solid #bbb;">
 <hr style="border-top: 3px solid #bbb;">
 
 ## Estrutura do projeto
