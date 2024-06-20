@@ -24,19 +24,21 @@ function PrideFlag({
         <div
           key={columnIndex}
           className={styles.column}
-          style={{
-            "--billow": columnIndex * billow + "px",
-            background: generateGradientString(colors),
-            animationDelay:
-              firstColumnDelay + columnIndex * staggeredDelay + "ms",
-          }}
+          style={
+            {
+              "--billow": columnIndex * billow + "px",
+              background: generateGradientString(colors),
+              animationDelay:
+                firstColumnDelay + columnIndex * staggeredDelay + "ms",
+            } as React.CSSProperties
+          }
         />
       ))}
     </div>
   );
 }
 
-function generateGradientString(colors) {
+function generateGradientString(colors: string[]) {
   const numOfColors = colors.length;
   const segmentHeight = 100 / numOfColors;
 

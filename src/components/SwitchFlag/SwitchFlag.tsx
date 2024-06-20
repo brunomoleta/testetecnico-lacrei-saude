@@ -6,10 +6,10 @@ import {
   Title,
   Wrapper,
 } from "@/components/SwitchFlag/SwitchFlag.style";
-import {Variant} from "@/types/types";
+import { Variant } from "@/types/types";
 
 function SwitchFlag() {
-  const choose:Variant[] = ["rainbow", "rainbow-original", "trans", "pan"];
+  const choose: Variant[] = ["rainbow", "rainbow-original", "trans", "pan"];
   const text = ["arco-íris", "arco-íris clássico", "trans", "pan"];
   const [index, setIndex] = React.useState(0);
 
