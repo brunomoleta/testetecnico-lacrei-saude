@@ -1,17 +1,17 @@
 import React from "react";
-import { ChildrenProps } from "@/types/types";
 import Logo from "@/components/Logo";
-import { HeaderWrapper } from "@/components/Header/Header.style";
+import {HeaderWrapper, StyledHeader} from "@/components/Header/Header.style";
+import HeaderNav from "@/components/Header/HeaderNav";
 
-function Header({ children }: ChildrenProps) {
+function Header() {
   const id = React.useId();
   return (
-    <header style={{ backgroundColor: "var(--color-background)" }}>
+    <StyledHeader>
       <HeaderWrapper id={`${id}-header`}>
         <Logo />
-        {children}
+        <HeaderNav/>
       </HeaderWrapper>
-    </header>
+    </StyledHeader>
   );
 }
 
