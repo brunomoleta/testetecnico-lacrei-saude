@@ -5,9 +5,7 @@ import { Providers } from "@/providers/Providers";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import BaseMain from "@/components/BaseMain";
-import { cookies } from "next/headers";
-import { DARK_COLORS, LIGHT_COLORS } from "@/styled-components/colors.style";
-import DarkLightMode from "@/components/DarkLightMode";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Início | Lacrei Saúde",
@@ -19,18 +17,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const savedTheme = cookies().get("color-theme");
-  const theme = savedTheme?.value || "light";
-  const themeColors = theme === "light" ? LIGHT_COLORS : DARK_COLORS;
 
   return (
     // @ts-ignore
-    <html lang="pt-BR" data-color-theme={theme} style={themeColors}>
+    <html lang="pt-BR">
       <body>
         <Providers>
-          <Header>
-            <DarkLightMode initialTheme={theme} />
-          </Header>
+          <Header/>
           <BaseMain>{children}</BaseMain>
           <Footer />
         </Providers>
