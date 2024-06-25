@@ -4,7 +4,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
     :root {
         --grey-90: hsl(0deg, 0%, 10%);
-
         --grey-80: hsl(0deg, 0%, 18%);
         --grey-70: hsl(0deg, 0%, 32%);
         --grey-60: hsl(0deg, 0%, 40%);
@@ -12,13 +11,15 @@ const GlobalStyles = createGlobalStyle`
         --grey-30: hsl(0deg, 0%, 80%);
         --grey-20: hsl(0deg, 0%, 88%);
         --grey-10: hsl(0deg, 0%, 95%);
+        --grey-05: hsl(0deg, 0%, 98%);
 
         --night: hsl(211deg, 55%, 25%);
         --day: hsl(16deg, 68%, 85%);
 
-        --header-background: linear-gradient(rgb(245, 255, 251) 00.04%, rgb(245, 255, 251) 100%);
+        --header-background: linear-gradient(rgb(245, 255, 251) 31.04%, rgb(255, 255, 255) 100%);
         --gradient-00: linear-gradient(105.43deg, rgb(1, 131, 131) 14.39%, rgb(1, 70, 135) 84.69%);
         --emerald-5: hsl(164deg, 48%, 97%);
+        --emerald-15: hsl(161.54, 35.14%, 92.75%);
         --emerald-10: hsl(164deg, 48%, 91%);
         --emerald-20: hsl(160deg, 41%, 79%);
         --emerald-30: hsl(160deg, 41%, 65%);
@@ -135,14 +136,13 @@ const GlobalStyles = createGlobalStyle`
         background-color: inherit;
         padding: 0;
         margin: 0;
-
+        border-radius: 8px;
     }
 
     button,
     input[type="submit"],
     a {
         cursor: pointer;
-        border-radius: 4px;
     }
 
     a {
@@ -242,15 +242,10 @@ const GlobalStyles = createGlobalStyle`
         opacity: .6;
     }
 
-    a, button {
-    }
 
-    a {
-        padding: 8px;
-    }
 
     a:focus, button:focus{
-        border: 3px solid var(--emerald-40);
+        border: 0;
         outline: 2px solid var(--emerald-20);
         @media (prefers-reduced-motion: no-preference) {
             transition: border-color 500ms ease-out;
@@ -264,10 +259,7 @@ const GlobalStyles = createGlobalStyle`
     }
     
 
-    p {
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
+    
 `;
 
 export default GlobalStyles;
