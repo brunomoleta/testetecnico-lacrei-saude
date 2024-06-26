@@ -128,6 +128,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     button,
+    a,
     input[type="submit"],
     select {
         border: initial;

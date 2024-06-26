@@ -9,4 +9,5 @@ export const LogoStyle = styled(Image)`
 export const LogoLink = styled(Link)`
   margin-inline-end: auto;
   padding-inline-start: unset;
+  padding: 20px 20px 20px 0;  
 `;
