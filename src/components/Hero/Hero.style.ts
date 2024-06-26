@@ -88,6 +88,15 @@ export const HeroCard = styled.div`
   width: 100%;
 
   padding: var(--clamp);
+
+    @media (min-width: 37.5rem) {
+  position: unset;
+  bottom: unset;
+  right: unset;
+  padding: 120px 0 0 0 ;
+  
+    
+    }
 `;
 export const Container = styled.div`
   background-color: var(--grey-05);
