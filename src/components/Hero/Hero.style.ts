@@ -9,10 +9,9 @@ export const Wrapper = styled.div`
 
   background: linear-gradient(to right, white 0px, transparent 1200px);
 
-  height: 600px;
+  height: 700px;
 
-  border-bottom: 2px solid black;
-  margin-block-end: 512px;
+  margin-block-end: 200px;
 
   @media (min-width: 37.5rem) {
     margin-block-end: 64px;
@@ -82,7 +81,7 @@ export const Highlight = styled.strong`
 
 export const HeroCard = styled.div`
   position: absolute;
-  top: 0;
+  bottom: -840px;
   right: 0;
 
   padding-block-start: 120px;
@@ -94,7 +93,7 @@ export const Container = styled.div`
   background-color: var(--grey-05);
   border: 2px solid var(--grey-20);
 
-  padding: clamp(0.75rem, 3svw, 1.5rem);
+  padding: 40px clamp(0.75rem, 3svw, 1.5rem);
   border-radius: 8px;
 
   @media (min-width: 37.5rem) {
