@@ -3,15 +3,22 @@ import styled from "styled-components";
 import Link from "next/link";
 
 export const Btn = styled(Link)`
-  padding: 0.625rem 2rem;
-  font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
   transition: background-color 400ms ease-out;
-
+  font-size: 1.125rem;
   background-color: white;
   color: var(--emerald-60);
   box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 4px;
+  display: grid;
+  padding: 0.625rem;
+  text-align: center;
+    
+  @media (min-width: 37.5rem) {
+  padding: 0.625rem 2rem;
+      
+  }  
+
   &:hover {
     transition: background-color 200ms ease-in;
     background-color: var(--emerald-15);
