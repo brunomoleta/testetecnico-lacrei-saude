@@ -11,3 +11,11 @@ export const Wrapper = styled.section`
 
   row-gap: 40px;
 `;
+
+export const WarningContainer = styled.div`
+  margin-block: 40px;
+  display: grid;
+  grid-auto-rows: auto;
+
+  row-gap: 40px;
+`;

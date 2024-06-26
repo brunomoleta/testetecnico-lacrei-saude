@@ -46,7 +46,7 @@ export const BtnBasic = styled(Btn)`
 export const BtnIcon = styled(BtnSecondary)`
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 40px;
   padding: 0;
   width: 64px;
   height: 64px;
