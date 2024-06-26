@@ -1,21 +1,30 @@
-import React from 'react';
-import {ButtonType} from "@/types/types";
-import {BtnBasic, BtnPrimary, BtnSecondary} from "@/components/Button/Button.style";
-import {uppercaseWord} from "@/utils/utils";
+import React from "react";
+import { ButtonType } from "@/types/types";
+import {
+  BtnBasic,
+  BtnIcon,
+  BtnPrimary,
+  BtnSecondary,
+} from "@/components/Button/Button.style";
 
+import { FC, AnchorHTMLAttributes } from "react";
 
-function Button({btnType, children}:{btnType: ButtonType, children: string}) {
-  const uppercasedChildren = uppercaseWord(children)
+type ButtonProps = {
+  btnType: ButtonType;
+  children: React.ReactNode;
+} & AnchorHTMLAttributes<HTMLAnchorElement>;
+
+const Button: FC<ButtonProps> = ({ btnType, children, ...props }) => {
   switch (btnType) {
-    case "primary":
-      return <BtnPrimary>{uppercasedChildren}</BtnPrimary>;
+    case "button":
+      return <BtnIcon {...props}>{children}</BtnIcon>;
     case "secondary":
-      return <BtnSecondary>{uppercasedChildren}</BtnSecondary>;
+      return <BtnSecondary {...props}>{children}</BtnSecondary>;
     case "basic":
-      return <BtnBasic>{uppercasedChildren}</BtnBasic>;
+      return <BtnBasic {...props}>{children}</BtnBasic>;
     default:
-      return null;
+      return <BtnPrimary {...props}>{children}</BtnPrimary>;
   }
-}
+};
 
 export default Button;
