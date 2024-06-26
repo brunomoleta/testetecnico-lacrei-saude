@@ -7,23 +7,22 @@ import {
   BtnSecondary,
 } from "@/components/Button/Button.style";
 
-import { FC, AnchorHTMLAttributes } from "react";
-
 type ButtonProps = {
   btnType: ButtonType;
   children: React.ReactNode;
-} & AnchorHTMLAttributes<HTMLAnchorElement>;
+  href: string
+};
 
-const Button: FC<ButtonProps> = ({ btnType, children, ...props }) => {
+const Button = ({href, btnType, children} : ButtonProps) => {
   switch (btnType) {
     case "button":
-      return <BtnIcon {...props}>{children}</BtnIcon>;
+      return <BtnIcon href={href}>{children}</BtnIcon>;
     case "secondary":
-      return <BtnSecondary {...props}>{children}</BtnSecondary>;
+      return <BtnSecondary href={href}>{children}</BtnSecondary>;
     case "basic":
-      return <BtnBasic {...props}>{children}</BtnBasic>;
+      return <BtnBasic href={href}>{children}</BtnBasic>;
     default:
-      return <BtnPrimary {...props}>{children}</BtnPrimary>;
+      return <BtnPrimary href={href}>{children}</BtnPrimary>;
   }
 };
 
