@@ -6,9 +6,12 @@ export const StyledHeader = styled.header`
   height: 6rem;
 
   display: grid;
+    
 `;
 export const HeaderWrapper = styled.div`
+    z-index: 1;
   display: flex;
+  align-items: center;
   width: 100%;
   flex-wrap: wrap;
 
