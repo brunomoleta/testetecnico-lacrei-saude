@@ -1,17 +1,25 @@
 import React from "react";
-import Logo from "@/components/Logo";
-import { Container, LacreiLink } from "@/components/Footer/Footer.style";
+
+import {
+  FooterStyled,
+  FooterWrapper,
+  Line,
+} from "@/components/Footer/Footer.style";
+
+import TopFooter from "@/components/Footer/TopFooter";
+import PsFooter from "@/components/Footer/PsFooter";
 
 function Footer() {
   return (
-    <footer>
-      <Container>
-        <Logo />
-        <LacreiLink href="https://lacreisaude.com.br/quem-somos/">
-          Quem somos
-        </LacreiLink>
-      </Container>
-    </footer>
+    <FooterStyled>
+      <FooterWrapper>
+        <TopFooter />
+      </FooterWrapper>
+      <Line />
+      <FooterWrapper>
+        <PsFooter />
+      </FooterWrapper>
+    </FooterStyled>
   );
 }
 
