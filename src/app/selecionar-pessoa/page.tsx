@@ -6,9 +6,11 @@ export const metadata: Metadata = {
   description: "Teste técnico de Bruno",
 };
 const SelecionarPessoaPage = () => {
-  return <>
-    <SelecionarPessoa/>
-  </>;
+  return (
+    <>
+      <SelecionarPessoa />
+    </>
+  );
 };
 
 export default SelecionarPessoaPage;

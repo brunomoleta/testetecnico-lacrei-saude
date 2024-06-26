@@ -10,10 +10,10 @@ import {
 type ButtonProps = {
   btnType: ButtonType;
   children: React.ReactNode;
-  href: string
+  href: string;
 };
 
-const Button = ({href, btnType, children} : ButtonProps) => {
+const Button = ({ href, btnType, children }: ButtonProps) => {
   switch (btnType) {
     case "button":
       return <BtnIcon href={href}>{children}</BtnIcon>;

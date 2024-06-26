@@ -2,5 +2,4 @@
 
 import styled from "styled-components";
 
-export const NavStyled = styled.ul`
-`;
+export const NavStyled = styled.ul``;

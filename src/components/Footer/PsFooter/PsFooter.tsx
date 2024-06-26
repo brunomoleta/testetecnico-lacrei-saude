@@ -7,7 +7,6 @@ import { footerData } from "@/data/footer";
 import Button from "@/components/Button";
 import Image from "next/image";
 
-
 function PsFooter() {
   return (
     <>

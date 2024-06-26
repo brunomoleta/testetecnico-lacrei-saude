@@ -1,2 +1,2 @@
-export * from './SelecionarPessoa';
-export { default } from './SelecionarPessoa';
+export * from "./SelecionarPessoa";
+export { default } from "./SelecionarPessoa";

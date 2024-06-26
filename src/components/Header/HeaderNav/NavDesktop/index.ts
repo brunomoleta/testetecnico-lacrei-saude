@@ -1,2 +1,2 @@
-export * from './NavDesktop';
-export { default } from './NavDesktop';
+export * from "./NavDesktop";
+export { default } from "./NavDesktop";

@@ -13,11 +13,10 @@ export const Btn = styled(Link)`
   display: grid;
   padding: 0.625rem;
   text-align: center;
-    
+
   @media (min-width: 37.5rem) {
-  padding: 0.625rem 2rem;
-      
-  }  
+    padding: 0.625rem 2rem;
+  }
 
   &:hover {
     transition: background-color 200ms ease-in;
