@@ -1,26 +1,25 @@
 "use client";
 import styled from "styled-components";
-import Link from "next/link";
 
 export const FooterStyled = styled.footer`
-  border-block-start: 1px solid var(--emerald-30);
-
   padding-block: 64px;
 
   display: grid;
   grid-auto-rows: auto;
 
   row-gap: 48px;
-`;
 
-export const LacreiLink = styled(Link)`
-  width: min-content;
-  @media (min-width: 35rem) {
-    width: fit-content;
+  @media (min-width: 37.5rem) {
+    border-block-start: 1px solid var(--emerald-30);
   }
 `;
+
 export const Warning = styled.p`
   font-size: 0.75rem;
+
+  @media (max-width: 37.5rem) {
+    max-inline-size: 30ch;
+  }
 `;
 
 export const FooterWrapper = styled.section`

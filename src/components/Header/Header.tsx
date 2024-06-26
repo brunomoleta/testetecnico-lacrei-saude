@@ -8,6 +8,7 @@ function Header() {
   return (
     <StyledHeader id="top">
       <HeaderWrapper id={`${id}-header`}>
+        <Logo isHeader={true} isMobile={true} />
         <Logo isHeader={true} />
         <HeaderNav />
       </HeaderWrapper>

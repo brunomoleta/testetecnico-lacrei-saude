@@ -1,2 +1,2 @@
-export * from './MainParagraph';
-export { default } from './MainParagraph';
+export * from "./MainParagraph";
+export { default } from "./MainParagraph";

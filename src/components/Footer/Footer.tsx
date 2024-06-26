@@ -7,7 +7,7 @@ import {
 } from "@/components/Footer/Footer.style";
 
 import TopFooter from "@/components/Footer/TopFooter";
-import PsFooter from "@/components/Footer/PsFooter";
+import BottomFooter from "@/components/BottomFooter";
 
 function Footer() {
   return (
@@ -15,10 +15,7 @@ function Footer() {
       <FooterWrapper>
         <TopFooter />
       </FooterWrapper>
-      <Line />
-      <FooterWrapper>
-        <PsFooter />
-      </FooterWrapper>
+      <BottomFooter />
     </FooterStyled>
   );
 }

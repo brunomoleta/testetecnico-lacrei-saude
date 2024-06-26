@@ -3,6 +3,8 @@ import React from "react";
 
 import {
   Buttons,
+  Container,
+  HeroCard,
   HeroHeading,
   HeroInfo,
   Highlight,
@@ -27,17 +29,25 @@ function Hero() {
           <h1>{hero.h1}</h1>
         </VisuallyHidden>
         <HeroInfo>
-          <HeroHeading>Olá, você está na&nbsp;Lacrei&nbsp;Saúde!</HeroHeading>
-          <MainParagraph>
-              Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
-              com profissionais de saúde qualificados, proporcionando
-              experiências de cuidado seguras e inclusivas.
-          </MainParagraph>
+          <HeroCard>
+            <HeroHeading>Olá, você está na Lacrei&nbsp;Saúde!</HeroHeading>
+            <Container>
+              <MainParagraph>
+                Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
+                com profissionais de saúde qualificados, proporcionando
+                experiências de cuidado seguras e inclusivas.
+              </MainParagraph>
 
-          <Buttons>
-            <Button href={"/selecionar-pessoa"} btnType={"primary"}>{hero.buttonOne}</Button>
-            <Button href={"/selecionar-pessoa"} btnType={"primary"}>{hero.buttonTwo}</Button>
-          </Buttons>
+              <Buttons>
+                <Button href={"/selecionar-pessoa"} btnType={"primary"}>
+                  {hero.buttonOne}
+                </Button>
+                <Button href={"/selecionar-pessoa"} btnType={"primary"}>
+                  {hero.buttonTwo}
+                </Button>
+              </Buttons>
+            </Container>
+          </HeroCard>
         </HeroInfo>
       </Wrapper>
     </>
