@@ -17,13 +17,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     // @ts-ignore
     <html lang="pt-BR">
       <body>
         <Providers>
-          <Header/>
+          <Header />
           <BaseMain>{children}</BaseMain>
           <Footer />
         </Providers>

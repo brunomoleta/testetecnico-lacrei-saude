@@ -1,18 +1,19 @@
-import HeroImage from "../../assets/hero.jpg"
+import HeroImage from "../../assets/hero.jpg";
 import React from "react";
 
-import Balancer from "react-wrap-balancer";
 import {
   Buttons,
   HeroHeading,
   HeroInfo,
-  HeroParagraph,
+  Highlight,
   ImageWrapper,
   MainImage,
-  Wrapper
+  Wrapper,
 } from "@/components/Hero/Hero.style";
-import {VisuallyHidden} from "@radix-ui/react-visually-hidden";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Button from "@/components/Button";
+import { hero } from "@/data/hero";
+import MainParagraph from "@/components/MainParagraph";
 
 function Hero() {
   const id = React.useId();
@@ -20,29 +21,25 @@ function Hero() {
     <>
       <Wrapper id={`${id}-hero}`}>
         <ImageWrapper>
-          <MainImage src={HeroImage} layout="fill"  alt={""}/>
+          <MainImage src={HeroImage} layout="fill" alt={""} />
         </ImageWrapper>
         <VisuallyHidden>
-          <h1>
-            Teste técnico da Lacrei Saúde produzido por Bruno Moleta Santos. Junho de 2024.
-          </h1>
+          <h1>{hero.h1}</h1>
         </VisuallyHidden>
         <HeroInfo>
+          <HeroHeading>Olá, você está na&nbsp;Lacrei&nbsp;Saúde!</HeroHeading>
+          <MainParagraph>
+              Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
+              com profissionais de saúde qualificados, proporcionando
+              experiências de cuidado seguras e inclusivas.
+          </MainParagraph>
 
-        <HeroHeading>Olá, você está na&nbsp;Lacrei&nbsp;Saúde!</HeroHeading>
-        <HeroParagraph>
-          <Balancer>
-            Conectamos pessoas LGBTQIAPN+
-            com profissionais de saúde qualificados, proporcionando experiências de cuidado seguras e inclusivas.
-          </Balancer>
-        </HeroParagraph>
-        <Buttons>
-          <Button btnType={"primary"}>para pacientes</Button>
-          <Button btnType={"primary"}>para profissionais</Button>
-        </Buttons>
+          <Buttons>
+            <Button href={"/selecionar-pessoa"} btnType={"primary"}>{hero.buttonOne}</Button>
+            <Button href={"/selecionar-pessoa"} btnType={"primary"}>{hero.buttonTwo}</Button>
+          </Buttons>
         </HeroInfo>
       </Wrapper>
-
     </>
   );
 }

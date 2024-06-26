@@ -4,4 +4,4 @@ export interface ChildrenProps {
   children: ReactNode;
 }
 
-export type ButtonType = "primary" | "secondary" | "basic"
+export type ButtonType = "primary" | "secondary" | "basic" | "button";
