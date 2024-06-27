@@ -5,7 +5,8 @@ import Link from "next/link";
 export const List = styled.ul`
   display: flex;
   align-items: flex-end;
-  column-gap: 24px;
+  flex-wrap: wrap;
+  column-gap: clamp(8px, 2%, 24px);
   transform: translateX(-16px);
 `;
 
