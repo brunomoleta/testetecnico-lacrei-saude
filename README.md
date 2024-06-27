@@ -1,4 +1,4 @@
-# Teste técnico da plataforma Lacrei Saúde
+# Teste técnico de Frontend da Lacrei Saúde
 
 <hr style="border-top: 3px solid #bbb;">
 
@@ -32,7 +32,6 @@ com profissionais da saúde qualificados.
   - [O que desenvolver em seguida](#o-que-desenvolver-em-seguida)
   - [Fontes úteis](#fontes-úteis)
 - [Considerações Finais](#considerações-finais)
-  - [Créditos](#autores)
   - [Agradecimentos](#agradecimentos)
 
 <hr style="border-top: 3px solid #bbb;">
@@ -67,20 +66,30 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 ### Funcionalidades
 
 - Página Inicial
-  - a pessoa usuária pode visualizar
-    ilustrações artísticas feitas somente em HTML e CSS;
-  - Ela pode navegar de um projeto para o outro usando botões;
-  - Pode colocar este projeto em visualização em tela cheia;
-- Segunda página
-  - A bandeira do Orgulho pode ser personalizada de acordo com o que a pessoa
-    preferir;
-  - É possível personalizar a velocidade do "vento" que passa pela bandeira;
+  - Temos aqui uma seção similar ao site oficial da Lacrei Saúde.
+  - Na Header os botões "Ajuda" e "Quem somos" levam o usuário a página oficial;
+  - O botão Entrar leva a uma página da aplicação deste repositório;
+
+  - No mais os botões "para Pacientes" e "para profissionais" levam a um formulário de cadastro;
+  - O Footer possui os ícones que levam as redes sociais da marca;
+  - Os demais links levam a pessoa usuária a página inicial;
+  
+- Selecionar pessoa
+  - Possui a mesma descrição da mesma página da Lacrei e tem dois botões que direcionam para os formulários;
+
+- Páginas de formulários
+  - A pessoa pode preencher este formulário e ao apertar "enviar" o formulário é limpo.  
 
 <hr style="border-top: 3px solid #bbb;">
 
 ### Telas
 
+- Tela inicial
+
 ![Imagem da Página inicial](/public/MultiDeviceafphoto.jpg)
+
+- Selecionar Pessoa
+
 ![Imagem da segunda página](/public/MultiDeviceafphoto-2.jpg)
 
 <hr style="border-top: 3px solid #bbb;">
@@ -100,6 +109,7 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 - `format`: Formata o projeto inteiro usando Prettier.
 - `lint`: Executa o ESLint para linting e correção automática.
 - `preview`: Usado para pré-visualizar o aplicativo construído usando o Vite.
+- `test`: Inicializar testes unitários com Vitest.
 
 Execute os scripts utilizando `npm run`, `yarn` ou `pnpm`.
 
@@ -111,33 +121,33 @@ Exemplo: `npm run dev`.
 
 - `next`: 14.2.4,
 - `react`: ^18,
-- `react-dom`: ^1
+- `react-dom`: ^18
 - `styled-components`: ^6.1.11
 - `@fontsource-variable/nunito`: ^5.0.19,
-- `@radix-ui/react-dialog`: ^1.1.0,
-- `@radix-ui/react-icons`: ^1.3.0,
 - `@radix-ui/react-visually-hidden`: ^1.0.3,
-- `cookies-next`: ^4.2.1,
-- `lodash.range`: ^3.2.0,
-- `react-slick`: ^0.30.2,
 - `react-wrap-balancer`: ^1.1.1,
-- `slick-carousel`: ^1.8.1,
+
 
 ### Dependências de Desenvolvimento
 
+- `@testing-library/dom`: ^10.1.0,
+- `@testing-library/jest-dom`: ^6.4.6,
 - `@testing-library/react`: ^16.0.0,
+- `@testing-library/user-event`: ^14.5.2,
 - `@types/node`: ^20,
 - `@types/react`: ^18.3.3,
 - `@types/react-dom`: ^18.3.0,
+- `@vitejs/plugin-react`: ^4.3.1,
 - `eslint`: ^8,
 - `eslint-config-next`: 14.2.4,
 - `jsdom`: ^24.1.0,
 - `new-component`: ^5.0.2,
 - `prettier`: ^3.3.2,
 - `typescript`: ^5,
-- `vitest`: ^1.6.0
+- `vitest`: ^1.6."
 
 <hr style="border-top: 3px solid #bbb;">
+
 ### Configuração e execução local
 
 1. Clone o repositório:
@@ -177,6 +187,7 @@ lacrei/
 ├── public/               Recursos públicos acessíveis diretamente.
 │
 ├── src/                    Código-fonte da aplicação.
+│   ├── __tests/            testes unitários usando Vitest
 │   ├── app/                App do Next onde ocorre o coração do projeto, roteador etc
 │   ├── assets/             Recursos estáticos como imagens, icones, etc.
 │   ├── components/         Componentes reutilizáveis.
@@ -191,91 +202,36 @@ lacrei/
 
 ## Processo de trabalho
 
-#### Terça-feira
+- Desenvolvimento da Landing Page
+- Seguido pela página Entrar
+- Realização do botão para voltar ao topo da página
+- Ajustes mais finos de Responsividade
 
-- Iniciei decidindo fazer as funcionalidades
-  em três partes.
-- Primeiro, setar um botão que muda as cores do site globalmente
-  na Header.
 
-- Após decidir colocar algo que tenha a ver com a
-  marca, tanto no sentido da saúde quanto a causa LGBTQIAPN+
-  decidi fazer um parágrafo falando de uma artista da comunidade que faz ilustrações
-  em CSS e HTML. Acredito que isso tem muito a ver com tecnologia e de dar luz a pessoas desconhecidas.
-- E um botão para trocar de página indo para uma funcionalidade que troca
-  a bandeira do Orgulho entre quatro opções. A bandeira em si foi trazida pronta
-  do site do Josh Comeau. Meu trabalho foi trocar ela com um estado a partir do click nela mesma.
-- E no footer decidi colocar além da logo, um link que leva ao "quem somos" do site oficial.
-
-- Tem sido um pouco confuso usar o figma porque é Muuuuita informação.
-  O arquivo confunde um pouco. Mas é legal ver que o design da Lacrei
-  está bem consistente.
-
-#### Quarta-feira
-
-Escolhi as ilustrações para colocar na página inicial.
-Tive bastante dificuldade em como colocá-las aqui no projeto.
-Primeiro pensei em fazer um iframe direto no site css-art.
-Mas não deu boa.
-Então tive que "transplantar" a arte do Github de Sarah Fossheim
-pra componentes React.
-
-Fiquei na dúvida como seria a visualização. Então após alguns testes
-decidi colocar em um carrossel usando uma API chamada `react-slick`.
-Isso no Desktop. Pro Mobile este carrossel foi ocultado e criado uma
-rolagem vertical convencional.
-
-Além disso, fiz o modo noturno com botões `dia` e `noite`.
-Usei a maneira de fazer do [Josh Comeau](https://www.joshwcomeau.com/), um dev. muito bom
-que tem um blog ótimo.
-
-Já defini o que colocar na segunda página, que é uma arte da bandeira do orgulho LGBTQIAPN+
-feita direto em código que o Josh mesmo explica [aqui](https://www.joshwcomeau.com/animation/pride-flags/).
-
-Infelizmente como as ilustrações em CSS são feitas em px pela Sarah
-acabei não fazendo Mobile first, mas é algo que realizei com frequência em outros projetos [portfólio](https://www.brunomoleta.com.br/).
-Mas está adaptado pára Mobile também.
-
-Amanhã quero ajeitar os estilos de fonte, fazer testes unitários e responsividade mobile :D.
-
-#### Quinta-feira
-
-Tive bastante dificuldade
-com erros de configuração como a questão do @ (alias).
-Por isso infelizmente não realizei testes.
-Já os fiz, mas não em Next.js, apenas em React puro.
-Por isso esta parte infelizmente não entreguei.
-Em especial pois tive dificuldades com a tipagem do componente
-da Bandeira do Orgulho, o que levou mais tempo
-do que eu esperava para resolver.
-Mas deu boa.
-Ademais, tive sucesso em ajeitar bem as páginas com responsividade.
 
 ### Aprendizado
 
+Fui bastante cuidadoso nos alinhamentos dos elementos do Footer.
+Isso exigiu usar as props do Styled Components pela primeira vez.
+
+
 ### O que desenvolver em seguida
 
-O ideal seriam as transições de página, estado dos elementos em hover, active,
-focus estarem mais bem apresentados. Usar Framer Motion para a renderização inicial
-dos elementos também é uma boa.
+- Associar o login e cadastro das páginas ao back end
 
 ### Fontes úteis
 
-Blog do Josh Comeau é bom demais. Ele é engraçado e
-tem muita muita coisa gratuita pra aprender relacionada
+O Blog do desenvolvedor canadense Josh Comeau é excelente. 
+Tem muita coisa gratuita de qualidade pra aprender lá relacionado
 a front end.
 
 <hr style="border-top: 3px solid #bbb;">
 
 ## Considerações finais
 
-### Créditos
+#### Agradecimentos
 
-- Josh Comeau e Sarah Fossheim que foram minhas inspirações
-  ao fazer este projeto.
-
-### Agradecimentos
-
-- Agradeço a Lacrei Saúde pela oportunidade de ler atentamente
-  a Marsha Design System e reitero meu interesse em fazer parte através
-  do voluntariado. Tanto pela causa quanto pelo "pôr a mão na massa" :D.
+- Agradeço a Lacrei Saúde pela oportunidade 
+  de realizar o teste técnico e reitero meu interesse em fazer parte da ONG através
+  do voluntariado tanto pelo interesse na causa quanto 
+  para trabalhar como Front end em um projeto real :D 
