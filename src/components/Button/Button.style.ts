@@ -23,6 +23,28 @@ export const Btn = styled(Link)`
     background-color: var(--emerald-15);
   }
 `;
+export const RealBtn = styled.button`
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  transition: background-color 400ms ease-out;
+  font-size: 1.125rem;
+  background-color: white;
+  color: var(--emerald-60);
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 4px;
+  display: grid;
+  padding: 0.625rem;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: 40rem) {
+    padding: 0.625rem 2rem;
+  }
+
+  &:hover {
+    transition: background-color 200ms ease-in;
+    background-color: var(--emerald-15);
+  }
+`;
 export const BtnPrimary = styled(Btn)`
   background-color: var(--emerald-60);
   color: white;
@@ -31,7 +53,24 @@ export const BtnPrimary = styled(Btn)`
     background-color: var(--emerald-80);
   }
 `;
+export const RealBtnPrimary = styled(RealBtn)`
+  background-color: var(--emerald-60);
+  color: white;
+  &:hover {
+    transition: background-color 200ms ease-in;
+    background-color: var(--emerald-80);
+  }
+`;
+
 export const BtnSecondary = styled(Btn)`
+  border: 2px solid var(--emerald-60);
+  &:hover {
+    transition: background-color 200ms ease-in;
+    border: 2px solid var(--emerald-60);
+    background-color: var(--emerald-10);
+  }
+`;
+export const RealBtnSecondary = styled(RealBtn)`
   border: 2px solid var(--emerald-60);
   &:hover {
     transition: background-color 200ms ease-in;

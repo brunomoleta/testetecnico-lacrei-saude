@@ -143,6 +143,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="submit"],
     a {
         cursor: pointer;
+        font-weight: 600;
     }
 
     a {
@@ -245,8 +246,8 @@ const GlobalStyles = createGlobalStyle`
 
 
     a:focus, button:focus{
-        border: 0;
-        outline: 2px solid var(--emerald-20);
+        outline-offset: 4px;
+        outline: 2px solid var(--emerald-70);
         @media (prefers-reduced-motion: no-preference) {
             transition: border-color 500ms ease-out;
         }
