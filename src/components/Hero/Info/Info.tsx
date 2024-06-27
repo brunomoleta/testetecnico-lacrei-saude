@@ -13,7 +13,7 @@ function Info() {
   return (
     <HeroInfo>
       <HeroCard>
-        <HeadingOne isLandingPage={true} />
+        <HeadingOne page="landing" />
         <Container>
           <MainParagraph>
             Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
