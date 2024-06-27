@@ -9,7 +9,7 @@ export const Container = styled.section`
   border-block-start: 1px solid var(--emerald-30);
   padding-block-start: 48px;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     border-block-start: revert;
     margin-block-start: revert;
 

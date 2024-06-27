@@ -4,8 +4,22 @@ import { HeroHeading } from "@/components/Hero/Hero.style";
 import Image from "next/image";
 
 export const Heading = styled(HeroHeading)`
+  border-radius: 0 8px 8px 0;
+  background-color: white;
+  display: none;
   color: var(--grey-90);
   max-inline-size: 15ch;
+
+  margin-block: 0;
+  @media (min-width: 40rem) {
+    display: inline-block;
+  }
+`;
+export const HeadingMobile = styled(Heading)`
+  display: inline-block;
+  @media (min-width: 40rem) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`
@@ -21,27 +35,49 @@ export const Wrapper = styled.div`
   padding-inline: var(--clamp);
 
   margin: 0 auto;
-  padding-block: 64px;
 
-  margin-block-end: 64px;
+  padding-block: 64px 0;
+  margin-block-end: 0;
+  @media (min-width: 40rem) {
+    padding-block: 64px;
+    margin-block-end: 64px;
+  }
 `;
 export const Line = styled.canvas`
   height: 3px;
-  width: 320px;
 
   background-color: var(--emerald-60);
+  width: 100%;
+  max-width: 200px;
+  margin-block-end: 3rem;
+  @media (min-width: 40rem) {
+    width: 320px;
+  }
 `;
 export const ImageWrapper = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  aspect-ratio: 2/3;
+  z-index: -1;
+  position: relative;
   overflow: hidden;
-  width: auto;
+  width: 100%;
+  height: 320px;
+
+  aspect-ratio: 2/3;
+
+  margin-block-end: 64px;
+  border-radius: 8px;
+
+  @media (min-width: 40rem) {
+    position: absolute;
+    margin-block-end: 0;
+    height: 100%;
+    width: auto;
+    right: 0;
+    top: 0;
+    border-radius: 8px 0 0 8px;
+  }
 `;
 export const PeopleImg = styled(Image)`
-  border-radius: 8px 0 0 8px;
+  position: relative;
   width: 100%;
   height: auto;
   object-position: center;

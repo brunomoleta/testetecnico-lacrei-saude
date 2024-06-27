@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   row-gap: 2rem;
   column-gap: 2.5rem;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     grid-template-columns: 1fr auto auto;
     justify-items: end;
   }
@@ -17,6 +17,9 @@ export const Heading = styled.h3`
   font-weight: 500;
   font-size: 1.125rem;
   height: fit-content;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 `;
 
 export const Categories = styled.div`

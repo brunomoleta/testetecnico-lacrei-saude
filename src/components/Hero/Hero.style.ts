@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
   margin-block-end: 200px;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     margin-block-end: 64px;
     height: 33.6875rem;
   }
@@ -26,7 +26,7 @@ export const ImageWrapper = styled.div`
   z-index: -1;
   height: 100%;
   opacity: 0.9;
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     opacity: 0.6;
   }
 `;
@@ -43,8 +43,21 @@ export const HeroHeading = styled.h2`
   color: var(--emerald-60);
   margin-block: 0 3rem;
   max-inline-size: 13ch;
+
+  display: none;
+  @media (min-width: 40rem) {
+    display: inline-block;
+  }
+`;
+export const HeroHeadingMobile = styled(HeroHeading)`
+  display: inline-block;
+
+  @media (min-width: 40rem) {
+    display: none;
+  }
 `;
 export const HeroParagraph = styled.p`
+  border-radius: 0 8px 8px 0;
   color: var(--grey-70);
 
   margin-block: 0 3rem;
@@ -52,6 +65,9 @@ export const HeroParagraph = styled.p`
   font-size: clamp(1rem, 6vw - 1rem, 1.5rem);
   line-height: clamp(1.5rem, 6vw - 1rem, 2.25rem);
   max-inline-size: 37ch;
+`;
+export const PageParagraph = styled(HeroParagraph)`
+  background-color: white;
 `;
 
 export const HeroInfo = styled.div`
@@ -70,7 +86,7 @@ export const Buttons = styled.div`
 
   flex-flow: column;
   justify-items: center;
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     flex-flow: revert;
     justify-items: revert;
   }
@@ -81,7 +97,7 @@ export const Highlight = styled.strong`
 
 export const HeroCard = styled.div`
   position: absolute;
-  bottom: -840px;
+  bottom: -950px;
   right: 0;
 
   padding-block-start: 120px;
@@ -89,14 +105,12 @@ export const HeroCard = styled.div`
 
   padding: var(--clamp);
 
-    @media (min-width: 37.5rem) {
-  position: unset;
-  bottom: unset;
-  right: unset;
-  padding: 120px 0 0 0 ;
-  
-    
-    }
+  @media (min-width: 40rem) {
+    position: unset;
+    bottom: unset;
+    right: unset;
+    padding: 4rem 0 0 0;
+  }
 `;
 export const Container = styled.div`
   background-color: var(--grey-05);
@@ -105,7 +119,7 @@ export const Container = styled.div`
   padding: 40px clamp(0.75rem, 3svw, 1.5rem);
   border-radius: 8px;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     padding: unset;
     margin-block-start: 40px;
     border-radius: revert;
