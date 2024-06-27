@@ -2,7 +2,6 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-    
   overflow: hidden;
   padding-block: 64px;
 
@@ -13,7 +12,6 @@ export const FooterStyled = styled.footer`
 
   @media (min-width: 40rem) {
     border-block-start: 1px solid var(--emerald-30);
-    
   }
 `;
 

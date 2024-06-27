@@ -17,9 +17,9 @@ export const Heading = styled.h3`
   font-weight: 500;
   font-size: 1.125rem;
   height: fit-content;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 `;
 
 export const Categories = styled.div`
