@@ -31,7 +31,7 @@ function Hero() {
         </VisuallyHidden>
         <HeroInfo>
           <HeroCard>
-            <HeadingOne />
+            <HeadingOne isLandingPage={true} />
             <Container>
               <MainParagraph>
                 Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>

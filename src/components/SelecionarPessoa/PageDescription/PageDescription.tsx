@@ -1,20 +1,13 @@
 import React from "react";
-import {
-  Heading,
-  Line,
-} from "@/components/SelecionarPessoa/SelecionarPessoa.style";
-import MainParagraph from "@/components/MainParagraph";
 import { selecionarPessoaData } from "@/data/selecionar-pessoa";
+import HeadingOne from "@/components/Hero/HeadingOne";
+import { PageParagraph } from "@/components/Hero/Hero.style";
 
 function PageDescription() {
   return (
     <>
-      <Heading as="h1">
-        Junte-se à nossa&nbsp;comunidade
-        <Line />
-      </Heading>
-
-      <MainParagraph>{selecionarPessoaData.description}</MainParagraph>
+      <HeadingOne isLandingPage={false} />
+      <PageParagraph>{selecionarPessoaData.description}</PageParagraph>
     </>
   );
 }
