@@ -14,7 +14,7 @@ export const Btn = styled(Link)`
   padding: 0.625rem;
   text-align: center;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     padding: 0.625rem 2rem;
   }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   background: var(--header-background);
-  height: 6rem;
+  padding-block: 2rem;
 
   display: grid;
 `;
@@ -13,6 +13,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  row-gap: 16px;
 
   font-size: 0.875rem;
 

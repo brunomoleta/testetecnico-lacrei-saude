@@ -134,7 +134,6 @@ const GlobalStyles = createGlobalStyle`
         border: initial;
         font-family: inherit;
         color: inherit;
-        background-color: inherit;
         padding: 0;
         margin: 0;
         border-radius: 8px;
