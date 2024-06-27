@@ -11,7 +11,7 @@ import {
 } from "@/components/FormPage/FormPage.style";
 import FormContent from "@/components/FormContent";
 
-function FormPage({ isDoctor=true }: { isDoctor: boolean }) {
+function FormPage({ isDoctor = true }: { isDoctor: boolean }) {
   const { image, string } = isDoctor ? persona.doctor : persona.person;
 
   const WrapperType = () => {
@@ -28,7 +28,7 @@ function FormPage({ isDoctor=true }: { isDoctor: boolean }) {
 
   return (
     <Container>
-      <FormContent/>
+      <FormContent />
       {WrapperType()}
     </Container>
   );

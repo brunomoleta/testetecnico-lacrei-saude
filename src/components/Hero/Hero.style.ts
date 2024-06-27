@@ -51,8 +51,8 @@ export const HeroHeading = styled.h2`
 `;
 
 export const FormHeading = styled(HeroHeading)`
-    display: inline-block;
-    
+  display: inline-block;
+
   font-size: clamp(1.125rem, 6vw - 1rem, 1.5rem);
   line-height: clamp(1em, 6vw - 1rem, 1.2em);
   margin-block: 0 8px;

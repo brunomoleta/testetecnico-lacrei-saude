@@ -3,23 +3,23 @@ import styled from "styled-components";
 import Image from "next/image";
 
 export const Container = styled.div`
-    padding-block: 80px 128px;
+  padding-block: 80px 128px;
   position: relative;
 
-        display: flex;
-        flex-flow: column;
-    gap: 40px;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
 
   width: 100%;
   max-width: var(--container-max-width);
   margin: auto;
   padding-inline: var(--clamp);
-    
-    @media (min-width: 35rem){
-  display: grid;
-  grid-template-columns: auto 1fr;
+
+  @media (min-width: 35rem) {
+    display: grid;
+    grid-template-columns: auto 1fr;
     column-gap: 80px;
-    }
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -42,8 +42,6 @@ export const PeopleImg = styled(Image)`
   height: auto;
   object-position: center;
   object-fit: contain;
-  
-    
 `;
 
 export const WrapperPaciente = styled(ImageWrapper)`
@@ -51,7 +49,7 @@ export const WrapperPaciente = styled(ImageWrapper)`
 `;
 export const WrapperProfissional = styled(ImageWrapper)`
   aspect-ratio: 2250/1928;
-  opacity: .8;
+  opacity: 0.8;
 `;
 
 export const Paragraph = styled.p`
@@ -61,6 +59,6 @@ export const InfoContainer = styled.div`
   display: flex;
   flex-flow: column;
   row-gap: 1.5rem;
-    
-    max-inline-size: 55ch;
+
+  max-inline-size: 55ch;
 `;

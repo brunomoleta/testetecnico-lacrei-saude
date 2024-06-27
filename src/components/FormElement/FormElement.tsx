@@ -1,5 +1,5 @@
-'use client'
-import React, {ChangeEvent} from "react";
+"use client";
+import React, { ChangeEvent } from "react";
 import LabelInput from "@/components/LabelInput";
 import {
   Container,
@@ -17,9 +17,9 @@ function FormElement() {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
-    if(name === email) {
+    if (name === email) {
       setEmailValue(value);
-    } else if(name === password) {
+    } else if (name === password) {
       setPasswordValue(value);
     }
   };
@@ -31,10 +31,22 @@ function FormElement() {
   return (
     <StyledForm onSubmit={handleSubmit}>
       <Container>
-        <LabelInput name={email} value={emailValue} onChange={handleChange} label={email} id={`${id}-${email}`} />
-        <LabelInput name={password} value={passwordValue} onChange={handleChange} label={password} id={`${id}-${password}`} />
+        <LabelInput
+          name={email}
+          value={emailValue}
+          onChange={handleChange}
+          label={email}
+          id={`${id}-${email}`}
+        />
+        <LabelInput
+          name={password}
+          value={passwordValue}
+          onChange={handleChange}
+          label={password}
+          id={`${id}-${password}`}
+        />
       </Container>
-      <FormButtons/>
+      <FormButtons />
     </StyledForm>
   );
 }

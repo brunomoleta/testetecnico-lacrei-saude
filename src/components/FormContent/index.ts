@@ -1,2 +1,2 @@
-export * from './FormContent';
-export { default } from './FormContent';
+export * from "./FormContent";
+export { default } from "./FormContent";
