@@ -15,6 +15,7 @@ export const Heading = styled(HeroHeading)`
     display: inline-block;
   }
 `;
+
 export const HeadingMobile = styled(Heading)`
   display: inline-block;
   @media (min-width: 40rem) {
@@ -54,6 +55,10 @@ export const Line = styled.canvas`
     width: 320px;
   }
 `;
+export const FormLine = styled(Line)`
+  margin-block-end: unset;
+`;
+
 export const ImageWrapper = styled.div`
   z-index: -1;
   position: relative;

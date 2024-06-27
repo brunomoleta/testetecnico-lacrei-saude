@@ -4,7 +4,7 @@ import PageInfo from "@/components/SelecionarPessoa/PageInfo";
 
 function SelecionarPessoa() {
   return (
-    <Container>
+    <Container id="selecionar-pessoa">
       <PageInfo />
     </Container>
   );

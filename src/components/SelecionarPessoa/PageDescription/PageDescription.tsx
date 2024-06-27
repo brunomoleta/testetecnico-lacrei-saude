@@ -6,7 +6,7 @@ import { PageParagraph } from "@/components/Hero/Hero.style";
 function PageDescription() {
   return (
     <>
-      <HeadingOne isLandingPage={false} />
+      <HeadingOne page="select-person" />
       <PageParagraph>{selecionarPessoaData.description}</PageParagraph>
     </>
   );

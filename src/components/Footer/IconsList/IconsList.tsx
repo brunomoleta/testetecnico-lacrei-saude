@@ -12,7 +12,7 @@ function IconsList() {
     <List>
       {iconsList.map((icon, index) => (
         <li key={index}>
-          <IconImg href={icon.href}>
+          <IconImg target="_blank" href={icon.href}>
             <Image alt={icon.alt} src={icon.image}></Image>
           </IconImg>
         </li>
@@ -25,22 +25,22 @@ export const iconsList = [
   {
     image: Facebook,
     alt: "Facebook",
-    href: "/",
+    href: "https://www.facebook.com/lacrei.saude",
   },
   {
     image: Insta,
     alt: "Instagram",
-    href: "/",
+    href: "https://www.instagram.com/lacrei.saude",
   },
   {
     image: Linkedin,
     alt: "Linkedin",
-    href: "/",
+    href: "https://www.linkedin.com/company/lacrei-saude/",
   },
   {
     image: Email,
     alt: "Email",
-    href: "/",
+    href: "contato@lacreisaude.com.br",
   },
 ];
 
