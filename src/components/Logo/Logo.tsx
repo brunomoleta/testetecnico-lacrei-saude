@@ -16,20 +16,24 @@ function Logo({
   isMobile?: boolean;
 }) {
   const ResponsiveLogo = () => {
-    if (isMobile)
+    const alt = "Lacrei Saúde";
+    if (!isHeader) {
+      return (
+        <LogoDesktop $isFooter href="/">
+          <LogoStyle width={135} alt={alt} src={BrandFooter} />
+        </LogoDesktop>
+      );
+    }
+    if (isMobile) {
       return (
         <LogoMobile href="/">
-          <LogoStyle width={135} alt="Lacrei Saúde" src={BrandMobile} />
+          <LogoStyle width={135} alt={alt} src={BrandMobile} />
         </LogoMobile>
       );
-    else {
+    } else {
       return (
         <LogoDesktop href="/">
-          <LogoStyle
-            width={190}
-            src={isHeader ? Brand : BrandFooter}
-            alt="Lacrei Saúde"
-          />
+          <LogoStyle width={190} src={Brand} alt={alt} />
         </LogoDesktop>
       );
     }

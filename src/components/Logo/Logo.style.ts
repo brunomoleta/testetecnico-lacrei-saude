@@ -10,15 +10,16 @@ export const LogoStyle = styled(Image)`
 export const LogoLink = styled(Link)`
   margin-inline-end: auto;
   padding-inline-start: unset;
-  padding: 20px 20px 20px 0;
 `;
 export const LogoMobile = styled(LogoLink)`
   @media (min-width: 37.5rem) {
     display: none;
   }
 `;
-export const LogoDesktop = styled(LogoLink)`
+export const LogoDesktop = styled(LogoLink)<{ $isFooter?: boolean }>`
   display: none;
+  padding: ${(props) =>
+    props.$isFooter ? "8px 20px 20px 0" : "20px 20px 20px 0"};
   @media (min-width: 37.5rem) {
     display: block;
   }
