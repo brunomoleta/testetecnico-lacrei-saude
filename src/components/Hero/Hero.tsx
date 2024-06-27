@@ -17,9 +17,11 @@ import Button from "@/components/Button";
 import { hero } from "@/data/hero";
 import MainParagraph from "@/components/MainParagraph";
 import HeadingOne from "@/components/Hero/HeadingOne";
+import Info from "@/components/Hero/Info";
 
 function Hero() {
   const id = React.useId();
+
   return (
     <>
       <Wrapper id={`${id}-hero}`}>
@@ -29,27 +31,7 @@ function Hero() {
         <VisuallyHidden>
           <h1>{hero.h1}</h1>
         </VisuallyHidden>
-        <HeroInfo>
-          <HeroCard>
-            <HeadingOne isLandingPage={true} />
-            <Container>
-              <MainParagraph>
-                Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
-                com profissionais de saúde qualificados, proporcionando
-                experiências de cuidado seguras e inclusivas.
-              </MainParagraph>
-
-              <Buttons>
-                <Button href={"/selecionar-pessoa"} btnType={"primary"}>
-                  {hero.buttonOne}
-                </Button>
-                <Button href={"/selecionar-pessoa"} btnType={"primary"}>
-                  {hero.buttonTwo}
-                </Button>
-              </Buttons>
-            </Container>
-          </HeroCard>
-        </HeroInfo>
+        <Info />
       </Wrapper>
     </>
   );

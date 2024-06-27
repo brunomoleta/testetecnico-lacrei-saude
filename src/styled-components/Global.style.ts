@@ -186,7 +186,7 @@ const GlobalStyles = createGlobalStyle`
         max-inline-size: var(--max-inline-size);
 
         &::selection {
-            background: var(--color-selection);
+            background: var(--emerald-20);
         }
     }
 

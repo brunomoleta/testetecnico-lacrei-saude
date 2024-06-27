@@ -2,14 +2,15 @@ import React from "react";
 import Button from "@/components/Button";
 import { selecionarPessoaData } from "@/data/selecionar-pessoa";
 import { Buttons } from "@/components/Hero/Hero.style";
+import { pessoaLink } from "@/data/headerData";
 
 function PageButtons() {
   return (
     <Buttons>
-      <Button href="/selecionar-pessoa" btnType="primary">
+      <Button href={pessoaLink} btnType="primary">
         {selecionarPessoaData.buttonOne}
       </Button>
-      <Button href="/selecionar-pessoa" btnType="secondary">
+      <Button href={pessoaLink} btnType="secondary">
         {selecionarPessoaData.buttonTwo}
       </Button>
     </Buttons>
