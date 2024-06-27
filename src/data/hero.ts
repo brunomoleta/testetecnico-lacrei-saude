@@ -4,5 +4,5 @@ export const hero = {
     "            Junho de 2024.",
   buttonOne: "Para pacientes",
   buttonTwo: "Para profissionais",
-  heading: "Olá, você está na&nbsp;Lacrei&nbsp;Saúde!",
+  heading: "Olá, você está na Lacrei Saúde!",
 };
