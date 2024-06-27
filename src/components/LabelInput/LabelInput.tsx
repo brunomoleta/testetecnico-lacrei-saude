@@ -27,4 +27,6 @@ const LabelInput = React.forwardRef<HTMLInputElement, IInput>(
   },
 );
 
+LabelInput.displayName = 'LabelInput';
+
 export default LabelInput;
