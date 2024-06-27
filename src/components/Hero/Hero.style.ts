@@ -43,6 +43,18 @@ export const HeroHeading = styled.h2`
   color: var(--emerald-60);
   margin-block: 0 3rem;
   max-inline-size: 13ch;
+
+  display: none;
+  @media (min-width: 37.5rem) {
+    display: inline-block;
+  }
+`;
+export const HeroHeadingMobile = styled(HeroHeading)`
+  display: inline-block;
+
+  @media (min-width: 37.5rem) {
+    display: none;
+  }
 `;
 export const HeroParagraph = styled.p`
   color: var(--grey-70);
@@ -89,14 +101,12 @@ export const HeroCard = styled.div`
 
   padding: var(--clamp);
 
-    @media (min-width: 37.5rem) {
-  position: unset;
-  bottom: unset;
-  right: unset;
-  padding: 120px 0 0 0 ;
-  
-    
-    }
+  @media (min-width: 37.5rem) {
+    position: unset;
+    bottom: unset;
+    right: unset;
+    padding: 120px 0 0 0;
+  }
 `;
 export const Container = styled.div`
   background-color: var(--grey-05);

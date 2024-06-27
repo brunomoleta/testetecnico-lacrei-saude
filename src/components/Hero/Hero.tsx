@@ -16,6 +16,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Button from "@/components/Button";
 import { hero } from "@/data/hero";
 import MainParagraph from "@/components/MainParagraph";
+import HeadingOne from "@/components/Hero/HeadingOne";
 
 function Hero() {
   const id = React.useId();
@@ -30,7 +31,7 @@ function Hero() {
         </VisuallyHidden>
         <HeroInfo>
           <HeroCard>
-            <HeroHeading>Olá, você está na Lacrei&nbsp;Saúde!</HeroHeading>
+            <HeadingOne />
             <Container>
               <MainParagraph>
                 Conectamos pessoas <Highlight>LGBTQIAPN+ </Highlight>
