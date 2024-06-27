@@ -66,6 +66,7 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 ### Funcionalidades
 
 - Página Inicial
+
   - Temos aqui uma seção similar ao site oficial da Lacrei Saúde.
   - Na Header os botões "Ajuda" e "Quem somos" levam o usuário a página oficial;
   - O botão Entrar leva a uma página da aplicação deste repositório;
@@ -73,12 +74,17 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
   - No mais os botões "para Pacientes" e "para profissionais" levam a um formulário de cadastro;
   - O Footer possui os ícones que levam as redes sociais da marca;
   - Os demais links levam a pessoa usuária a página inicial;
-  
+
 - Selecionar pessoa
+
   - Possui a mesma descrição da mesma página da Lacrei e tem dois botões que direcionam para os formulários;
 
 - Páginas de formulários
-  - A pessoa pode preencher este formulário e ao apertar "enviar" o formulário é limpo.  
+  - A pessoa pode preencher este formulário e ao apertar "enviar" o formulário é limpo.
+
+- Testes unitários
+  - Um deles testa se botões da página inicial funcionam. E o segundo 
+  se o formulário pode ser preenchido e enviado.
 
 <hr style="border-top: 3px solid #bbb;">
 
@@ -86,11 +92,15 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
 
 - Tela inicial
 
-![Imagem da Página inicial](/public/MultiDeviceafphoto.jpg)
+![Landing Page](/public/MultiDeviceafphoto.jpg)
 
 - Selecionar Pessoa
 
-![Imagem da segunda página](/public/MultiDeviceafphoto-2.jpg)
+![Selecionar pessoa](/public/MultiDeviceafphoto-2.jpg)
+
+- Cadastro
+
+![Cadastro](/public/MultiDeviceafphoto-3.jpg)
 
 <hr style="border-top: 3px solid #bbb;">
 
@@ -126,7 +136,6 @@ Exemplo: `npm run dev`.
 - `@fontsource-variable/nunito`: ^5.0.19,
 - `@radix-ui/react-visually-hidden`: ^1.0.3,
 - `react-wrap-balancer`: ^1.1.1,
-
 
 ### Dependências de Desenvolvimento
 
@@ -207,13 +216,10 @@ lacrei/
 - Realização do botão para voltar ao topo da página
 - Ajustes mais finos de Responsividade
 
-
-
 ### Aprendizado
 
 Fui bastante cuidadoso nos alinhamentos dos elementos do Footer.
 Isso exigiu usar as props do Styled Components pela primeira vez.
-
 
 ### O que desenvolver em seguida
 
@@ -221,7 +227,7 @@ Isso exigiu usar as props do Styled Components pela primeira vez.
 
 ### Fontes úteis
 
-O Blog do desenvolvedor canadense Josh Comeau é excelente. 
+O Blog do desenvolvedor canadense Josh Comeau é excelente.
 Tem muita coisa gratuita de qualidade pra aprender lá relacionado
 a front end.
 
@@ -231,7 +237,7 @@ a front end.
 
 #### Agradecimentos
 
-- Agradeço a Lacrei Saúde pela oportunidade 
+- Agradeço a Lacrei Saúde pela oportunidade
   de realizar o teste técnico e reitero meu interesse em fazer parte da ONG através
-  do voluntariado tanto pelo interesse na causa quanto 
-  para trabalhar como Front end em um projeto real :D 
+  do voluntariado tanto pelo interesse na causa quanto
+  para trabalhar como Front end em um projeto real :D
