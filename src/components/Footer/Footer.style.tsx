@@ -2,6 +2,8 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
+    
+  overflow: hidden;
   padding-block: 64px;
 
   display: grid;
@@ -9,15 +11,16 @@ export const FooterStyled = styled.footer`
 
   row-gap: 48px;
 
-  @media (min-width: 37.5rem) {
+  @media (min-width: 40rem) {
     border-block-start: 1px solid var(--emerald-30);
+    
   }
 `;
 
 export const Warning = styled.p`
   font-size: 0.75rem;
 
-  @media (max-width: 37.5rem) {
+  @media (max-width: 40rem) {
     max-inline-size: 30ch;
   }
 `;
