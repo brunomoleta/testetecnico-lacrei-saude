@@ -3,15 +3,13 @@ import styled from "styled-components";
 import { HeroHeading } from "@/components/Hero/Hero.style";
 import Image from "next/image";
 
-
 const Base = styled(HeroHeading)`
   border-radius: 0 8px 8px 0;
   background-color: white;
   color: var(--grey-90);
   margin-block: 0;
   max-inline-size: 15ch;
-    
-`
+`;
 export const Heading = styled(Base)`
   display: none;
 

@@ -80,11 +80,12 @@ Foram disponibilizado cinco dias úteis (13-20/06/2024) para:
   - Possui a mesma descrição da mesma página da Lacrei e tem dois botões que direcionam para os formulários;
 
 - Páginas de formulários
+
   - A pessoa pode preencher este formulário e ao apertar "enviar" o formulário é limpo.
 
 - Testes unitários
-  - Um deles testa se botões da página inicial funcionam. E o segundo 
-  se o formulário pode ser preenchido e enviado.
+  - Um deles testa se botões da página inicial funcionam. E o segundo
+    se o formulário pode ser preenchido e enviado.
 
 <hr style="border-top: 3px solid #bbb;">
 
