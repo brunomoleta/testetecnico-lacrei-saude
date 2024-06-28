@@ -3,20 +3,24 @@ import styled from "styled-components";
 import { HeroHeading } from "@/components/Hero/Hero.style";
 import Image from "next/image";
 
-export const Heading = styled(HeroHeading)`
+
+const Base = styled(HeroHeading)`
   border-radius: 0 8px 8px 0;
   background-color: white;
-  display: none;
   color: var(--grey-90);
-  max-inline-size: 15ch;
-
   margin-block: 0;
+  max-inline-size: 15ch;
+    
+`
+export const Heading = styled(Base)`
+  display: none;
+
   @media (min-width: 40rem) {
     display: inline-block;
   }
 `;
 
-export const HeadingMobile = styled(Heading)`
+export const HeadingMobile = styled(Base)`
   display: inline-block;
   @media (min-width: 40rem) {
     display: none;
