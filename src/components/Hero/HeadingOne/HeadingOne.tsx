@@ -8,7 +8,6 @@ import { hero } from "@/data/hero";
 import {
   FormLine,
   Heading,
-  HeadingMobile,
   Line,
 } from "@/components/SelecionarPessoa/SelecionarPessoa.style";
 import Balancer from "react-wrap-balancer";
