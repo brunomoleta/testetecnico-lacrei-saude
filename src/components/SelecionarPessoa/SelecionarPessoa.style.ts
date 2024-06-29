@@ -13,14 +13,14 @@ const Base = styled(BaseHeading)`
 export const Heading = styled(Base)`
   display: none;
 
-  @media (min-width: 40rem) {
+  @media (min-width: 34rem) {
     display: inline-block;
   }
 `;
 
 export const HeadingMobile = styled(Base)`
     display: none;
-  @media (max-width: 40rem) {
+  @media (max-width: 34rem) {
   display: inline-block;
   }
 `;
