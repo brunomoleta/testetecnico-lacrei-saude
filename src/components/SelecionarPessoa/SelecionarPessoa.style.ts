@@ -8,7 +8,7 @@ const Base = styled(BaseHeading)`
   background-color: white;
   color: var(--grey-90);
   margin-block: 0;
-  max-inline-size: 15ch;
+  max-inline-size: 16ch;
 `;
 export const Heading = styled(Base)`
   display: none;
