@@ -20,6 +20,9 @@ export const Heading = styled(Base)`
 
 export const HeadingMobile = styled(Base)`
   display: inline-block;
+  @media (min-width: 40rem) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`
