@@ -41,11 +41,11 @@ export const BaseHeading = styled.h2`
   font-weight: 600;
   line-height: clamp(2.4rem, 6vw - 1rem, 3.625rem);
   margin-block: 0 3rem;
-  max-inline-size: 13ch;
 
 `
 
 export const HeroHeading = styled(BaseHeading)`
+  max-inline-size: 13ch;
   color: var(--emerald-60);
 
   display: none;
