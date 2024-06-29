@@ -1,9 +1,9 @@
 "use client";
 import styled from "styled-components";
-import { HeroHeading } from "@/components/Hero/Hero.style";
+import {BaseHeading} from "@/components/Hero/Hero.style";
 import Image from "next/image";
 
-const Base = styled(HeroHeading)`
+const Base = styled(BaseHeading)`
   border-radius: 0 8px 8px 0;
   background-color: white;
   color: var(--grey-90);
@@ -20,9 +20,6 @@ export const Heading = styled(Base)`
 
 export const HeadingMobile = styled(Base)`
   display: inline-block;
-  @media (min-width: 40rem) {
-    display: none;
-  }
 `;
 
 export const Container = styled.div`

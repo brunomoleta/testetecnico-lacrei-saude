@@ -36,13 +36,17 @@ export const MainImage = styled(Image)`
   width: 100%;
 `;
 
-export const HeroHeading = styled.h2`
+export const BaseHeading = styled.h2`
   font-size: clamp(1.75rem, 6vw - 1rem, 3rem);
   font-weight: 600;
   line-height: clamp(2.4rem, 6vw - 1rem, 3.625rem);
-  color: var(--emerald-60);
   margin-block: 0 3rem;
   max-inline-size: 13ch;
+
+`
+
+export const HeroHeading = styled(BaseHeading)`
+  color: var(--emerald-60);
 
   display: none;
   @media (min-width: 40rem) {
