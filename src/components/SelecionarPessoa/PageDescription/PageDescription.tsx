@@ -8,7 +8,9 @@ function PageDescription() {
   return (
     <>
       <HeadingOne page="select-person" />
-        <PageParagraph><Balancer>{selecionarPessoaData.description}</Balancer></PageParagraph>
+      <PageParagraph>
+        <Balancer>{selecionarPessoaData.description}</Balancer>
+      </PageParagraph>
     </>
   );
 }

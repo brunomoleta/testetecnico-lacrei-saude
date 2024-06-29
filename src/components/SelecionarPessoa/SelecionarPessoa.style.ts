@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import {BaseHeading} from "@/components/Hero/Hero.style";
+import { BaseHeading } from "@/components/Hero/Hero.style";
 import Image from "next/image";
 
 const Base = styled(BaseHeading)`
@@ -11,18 +11,7 @@ const Base = styled(BaseHeading)`
   max-inline-size: 16ch;
 `;
 export const Heading = styled(Base)`
-  display: none;
-
-  @media (min-width: 34rem) {
     display: inline-block;
-  }
-`;
-
-export const HeadingMobile = styled(Base)`
-    display: none;
-  @media (max-width: 34rem) {
-  display: inline-block;
-  }
 `;
 
 export const Container = styled.div`

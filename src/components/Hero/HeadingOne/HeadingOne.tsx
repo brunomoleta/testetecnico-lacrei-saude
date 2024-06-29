@@ -11,8 +11,10 @@ import {
   HeadingMobile,
   Line,
 } from "@/components/SelecionarPessoa/SelecionarPessoa.style";
+import Balancer from "react-wrap-balancer";
 
 type Page = "landing" | "select-person" | "form";
+
 function HeadingOne({ page }: { page: Page }) {
   if (page === "landing") {
     return (
@@ -24,14 +26,18 @@ function HeadingOne({ page }: { page: Page }) {
   } else if (page === "select-person")
     return (
       <>
-        <Heading>Junte-se à nossa&nbsp;comunidade</Heading>
-        <HeadingMobile>Junte-se à nossa comunidade</HeadingMobile>
+        <Heading>
+          <Balancer>Junte-se à nossa comunidade</Balancer>
+        </Heading>
+
         <Line />
       </>
     );
   return (
     <div>
-      <FormHeading as="h1">Boas-vindas à Lacrei Saúde</FormHeading>
+      <FormHeading as="h1">
+        <Balancer>Boas-vindas à Lacrei Saúde</Balancer>
+      </FormHeading>
       <FormLine />
     </div>
   );
